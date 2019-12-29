@@ -1,0 +1,66 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20191229</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2019年12月29日</h1>
+<p>ヒッチコック型の最適輸送問題は，LPとして定式化できるためLPに対するアルゴリズムを愚直に実装すれば
+解けると言えば解ける．一方で，問題の構造を活かしたアルゴリズムを実装するととても効率的な計算が可能となる．</p>
+<p>ネットワーク計画問題のデータ構造とアルゴリズムを工夫する練習としてちょうど良いので．
+この年末年始に後輩とプログラミング勝負をすることにした．</p>
+<p>とりいそぎデータフォーマットの整理とランダムインプットデータを生成するコードを書いた．</p>
+<p><strong><a href="https://github.com/takala4/takala-bako/blob/master/hitchcock/Hitchcock_Data.ipynb">takala-bako/Hitchcock_Data.ipynb at master · takala4/takala-bako</a></strong></p>
+<p>このとき思ったのが，総和制約（＋整数制約）のもとで乱数を発生させるのって，結構めんどくさいなってこと．</p>
+<p>たとえば，供給地が$N$地点で総供給量が$S$のとき，テストデータは$N$個の総和が$S$の乱数であって欲しいが，
+このような条件の乱数生成は少し手順を踏む必要がある（総和の制約がある時点で乱数とは言い難いが．．．．）</p>
+<p>今回はとりあえず以下の手順で実装した．</p>
+<ul>
+<li>$N$個の乱数$x_{i}$生成</li>
+<li>割合$x_{i} / (\sum x_{i})$に変換</li>
+<li>総供給量$S$を乗じる</li>
+<li>整数制約がある場合，四捨五入により誤差が生じるので，$x_{N}$で調整</li>
+</ul>
+<p>うまい方法があれば知りたい．</p>
+<br><br>
+<div class="page_link">
+<a href="./20191228.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
