@@ -3,8 +3,8 @@ import json
 import glob
 
 def main():
-    md_file_list = glob.glob('.\dairy_md\\*.md')
-    date_list = [p.split('.\dairy_md\\')[1][:8:] for p in md_file_list]
+    md_file_list = glob.glob('.\diary_md\\*.md')
+    date_list = [p.split('.\diary_md\\')[1][:8:] for p in md_file_list]
     for i in range(len(date_list)):
         make_diary_html(date_list, i)
     
@@ -15,7 +15,7 @@ def main():
 def make_diary_html(date_list, index):
     date = date_list[index]
 
-    md_path = 'dairy_md\\%s.md'%date
+    md_path = 'diary_md\\%s.md'%date
     
     f = open(md_path, 'r', encoding='utf-8-sig')
     sample_text = f.read()
@@ -25,7 +25,7 @@ def make_diary_html(date_list, index):
     
     
     
-    html_path = 'dairy\\%s.html'%date
+    html_path = 'diary\\%s.html'%date
     f = open(html_path, 'w', encoding='utf-8-sig')
     
 
@@ -143,11 +143,11 @@ def make_index_html():
     
     index_html.write('\n<ul>\n')
 
-    file_list = glob.glob('.\dairy\\*.html')
+    file_list = glob.glob('.\diary\\*.html')
     count = 0
 
     for file_path in file_list:
-        date = file_path.split('.\dairy\\')[1][:8:]
+        date = file_path.split('.\diary\\')[1][:8:]
         year = date[:4:]
         month  = date[4:6:]
         day    = date[6:8]
