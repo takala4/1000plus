@@ -1,0 +1,80 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200101</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年01月01日</h1>
+<p>この日報を書く環境を起動するのがめんどくさいので，バッチ処理するファイルを作成した．</p>
+<p>nikki.bat</p>
+<p>```</p>
+<p>@echo off</p>
+<p>cd %userprofile%\Documents\1000plus
+pushd diary_md</p>
+<p>@echo off</p>
+<p>set text=# %date:~0,4%年%date:~5,2%月%date:~8,2%日</p>
+<p>@REM 文字コードをUTF-8に変換
+chcp 65001
+echo %text% &gt;&gt;%date:~0,4%%date:~5,2%%date:~8,2%.md</p>
+<p>@REM 文字コードをShift-JISに戻す
+chcp 932</p>
+<p>@echo off
+popd</p>
+<p>@REM VS code起動
+Code -n . .\diary_md\%date:~0,4%%date:~5,2%%date:~8,2%.md</p>
+<p>```</p>
+<p>これcode blockがハイライトされないな．今後修正する．とりあえず発見をまとめる．</p>
+<ul>
+<li><code>%userprofile%\Documents</code>でドキュメントフォルダのpathになる</li>
+<li><code>cd</code>ではなく<code>pushd</code>でディレクトリ移動すると，<code>popd</code>で移動前のディレクトリに戻れる</li>
+<li>20200101のような8桁の年月日は<code>%date:~0,4%%date:~5,2%%date:~8,2%</code>で取得できる</li>
+<li>UTF-8でファイルを作成し書き込みたい場合，<code>chcp</code>でコマンドプロンプト環境の文字コードを変更する必要がある</li>
+<li>VS Codeはなんと<code>Code</code>コマンドでパスが通っている．オプション<code>-n</code>はnew．作業ディレクトリとopenしたいファイルパスを引数で与える．</li>
+</ul>
+<h2>今日のメモ：</h2>
+<ul>
+<li>node/link disjoint paths : nodeまたはlinkを共有しない経路</li>
+<li>disjoint sets : 互いに素な集合</li>
+</ul>
+<br><br>
+<div class="page_link">
+<a href="./20191231.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
