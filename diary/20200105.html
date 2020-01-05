@@ -1,0 +1,79 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200105</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年01月05日</h1>
+<p>研究室の書籍管理システムを構築しようとしている．</p>
+<p>ISBNをキーとして，以下のツールを組み合わせた
+システム構成を想定している．</p>
+<ul>
+<li>データベース：google spreadsheet<ul>
+<li>引継ぎがしやすい．データベースは誰でも使える</li>
+</ul>
+</li>
+<li>UI：GAS<ul>
+<li>サーバーレスを目指す</li>
+</ul>
+</li>
+<li>ISBNバーコード読み取り：<strong><a href="https://serratus.github.io/quaggaJS/">QuaggaJS, an advanced barcode-reader written in JavaScript</a></strong><ul>
+<li>Javascriptで実装されているQRコード読み取りライブラリ．ブラウザベースのアプリに実装できそう．</li>
+</ul>
+</li>
+<li>ISBN照合API：<strong><a href="http://webcatplus.nii.ac.jp/faq_008.html">Webcat Plus</a></strong><ul>
+<li>国立情報学研究所（NII）が提供する無料の情報サービス．</li>
+<li>ISBNから書籍情報を検索できるAPIはAmazonなども提供しているが，洋書・専門書がいまいち．</li>
+</ul>
+</li>
+<li>検索システム：未定<ul>
+<li>spreadsheetから簡単にwebアプリが作成できるツールに <strong><a href="https://www.glideapps.com/">Create an App from a Google Sheet in Minutes · Glide</a></strong> がある．</li>
+<li>ここで実装されている検索システムがやたら高速なので参考にしたい</li>
+</ul>
+</li>
+</ul>
+<p>なんとなく形は見えているのだが，まとまった時間がなく（言い訳）プロジェクトがスタートしていない．</p>
+<p>そこそこ大規模なシステムで，実装できれば勉強になることも
+多そうなのでちゃんと着手したい．たぶん短期集中でやるのがいいんだろうな．</p>
+<br><br>
+<div class="page_link">
+<a href="./20200104.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
