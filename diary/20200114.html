@@ -1,0 +1,113 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200114</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年01月14日</h1>
+<p>$LaTeX$の処理系は謎である．
+解説サイトも多いが，そのすべてを理解はできないだろし，する気もない．</p>
+<p>せめて中間生成ファイルのおおまかな役割ぐらいは知っておこうと思い整理した．以下のページを参考にしたが，思い違いがある可能性を断っておく．</p>
+<ul>
+<li><strong><a href="https://cns-guide.sfc.keio.ac.jp/2001/11/1/8.html">1.8 LaTeXに関係するファイル</a></strong></li>
+<li><strong><a href="https://tex.stackexchange.com/questions/7770/file-extensions-related-to-latex-etc">context - File extensions related to LaTeX, etc - TeX - LaTeX Stack Exchange</a></strong></li>
+<li><strong><a href="https://hopf.math.purdue.edu/doc/html/suffixes.html">What do the file extensions mean?</a></strong></li>
+<li><strong><a href="https://blog.miz-ar.info/2016/12/running-tex/">TeX の実行あれこれ | 雑記帳</a></strong></li>
+</ul>
+<p><strong>入力ファイル</strong></p>
+<ul>
+<li><code>.tex</code> : 本体</li>
+<li><code>.cls</code> : クラスファイル</li>
+<li><code>.clo</code> : クラスオプションファイル</li>
+<li><code>.sty</code> : スタイルファイル</li>
+<li><code>.bib</code> : bibのソースファイル</li>
+<li><code>.bst</code> : citation形式の設定ファイル</li>
+</ul>
+<p><strong>中間ファイル</strong></p>
+<ul>
+<li>処理全体<ul>
+<li><code>.log</code> : LaTeX自身の処理を記録するログファイル</li>
+</ul>
+</li>
+<li>相互参照<ul>
+<li><code>.aux</code> : 参考文献，図表などの文書内の参照関係の橋渡しをする</li>
+</ul>
+</li>
+<li>目次<ul>
+<li><code>.toc</code> : 目次を作成する際に生成される <code>\tableofcontents</code></li>
+<li><code>.lot</code> : 表目次を作成する際に生成される <code>\listoftables</code></li>
+<li><code>.lof</code> : 図目次を作成する際に生成される <code>\listoffigures</code></li>
+</ul>
+</li>
+<li>引用<ul>
+<li><code>.bbl</code> : biblatexにより生成されるbibliographyファイル</li>
+<li><code>.blg</code> : bibtexのログファイル</li>
+<li><code>.bcf</code> : <code>.bbl</code>ファイルを作成する際に生成される </li>
+</ul>
+</li>
+<li>索引<ul>
+<li><code>.idx</code> : 索引語を書き出すファイル <code>\makeindex</code></li>
+<li><code>.ind</code> : 索引を出力するファイル</li>
+<li><code>.ilg</code> : 索引処理のログファイル</li>
+</ul>
+</li>
+<li>コンパイル<ul>
+<li><code>.fdb_latexmk</code> : latexmkrcプログラム関連．コンパイルオプション等を保存</li>
+<li><code>.fls</code> : 中間ファイを含めた実行中に読み書きしたファイルの一覧を保存</li>
+</ul>
+</li>
+<li>その他<ul>
+<li><code>.synctex.gz</code> : エディタとビューワのジャンプに必要</li>
+<li><code>.run.xml</code> : 謎 </li>
+</ul>
+</li>
+</ul>
+<p><strong>出力ファイル</strong></p>
+<ul>
+<li><code>.dvi</code> : 文書の見た目のレイアウトを画像形式・表示デバイス・プリンタ依存しない形式で記録．これをもとにPDFが生成される <strong><a href="https://en.wikipedia.org/wiki/Device_independent_file_format">Device independent file format - Wikipedia</a></strong></li>
+<li><code>.pdf</code> : 割愛</li>
+</ul>
+<p>中間ファイルはすべて<code>.gitignore</code>に書いている．
+ワーキングディレクトリの見た目のために，コンパイルのつど中間ファイルを消す方法もあるが，コンパイル時間を少しでも削りたいので採用していない．</p>
+<br><br>
+<div class="page_link">
+<a href="./20200113.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
