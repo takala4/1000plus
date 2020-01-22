@@ -1,0 +1,80 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200122</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年01月22日</h1>
+<p>PFNが開発を進めていたChainerが，FacebookのPyTorchに敗けたという記事が
+日経に取りあげられていた．</p>
+<p><strong><a href="https://www.nikkei.com/article/DGXMZO53727670U9A221C1000000/">GAFAが後追いした国産AIの雄　開発終了の深層　　:日本経済新聞</a></strong></p>
+<p>両方ともDeep learingのフレームワークで，
+興味はあるものの触ったことはなかった．
+しかし，Chainerが国産フレームワークという点では少なからず応援していたので，
+開発終了の報を聞いたときは少し残念だった．</p>
+<p>実は，
+FacebookのPyTorchはChainerを基にデザインされていたらしく，
+記事では，</p>
+<blockquote>
+<p>主要開発者である同社のスミス・チンタラ氏はPyTorchの設計思想がChainerの影響を受けていると明言している。「Chainerのフォーク（分岐）と呼ばれても構わない」（チンタラ氏）との発言まである。</p>
+</blockquote>
+<p>とまで言及されていた．そして，後発にやられてしまった理由として以下のように書かれていた．</p>
+<blockquote>
+<p>最大のポイントは、ChainerがすべてPythonで実装されていたのに対して、PyTorchはそのほとんどがC/C++で実装されており、パフォーマンス面でPyTorchが優位だったことがある。</p>
+</blockquote>
+<p>マーケティングとか売り込みが下手という日本企業あるあるの敗北かと思ったら，
+技術的な側面で負けていたようだ．
+しかもかなり納得の理由．</p>
+<p>Pythonは書きやすいし，できるまでのスピード感は気持ちい良いが，
+長い運用を考えるとCの実行速度は必要になるのだろう．</p>
+<p>毎年，弊研究室が（というか私が）主催しB4にプログラミングの基礎を伝授するゼミでは．まずCをやらせることにしている．
+幣学科のカリキュラム上，ほとんどプログラミングをしたことのない学生もいるが，
+問答無用でCの課題を出す．</p>
+<p>その後に，Pythonやmatlabを与えて，ありがたみを知ってもらうという魂胆だ．
+実際，研究を進める上ではPythonやmatlabが使われることが多いが，
+そこでも良いコードを書こうとしたらメモリや型を意識する必要がでてくる．
+そのときに，Cでかじった記憶を役立てて欲しいと思っている．</p>
+<p>毎年，初回からCで殴りにかかると脱落者がでるので，
+今年は，このChainerとPyTorchのチュートリアルでしてCは大事なんだよっと伝えようかしら．</p>
+<br><br>
+<div class="page_link">
+<a href="./20200121.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
