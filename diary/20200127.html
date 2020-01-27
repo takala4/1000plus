@@ -1,0 +1,103 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200127</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年01月27日</h1>
+<h2>やっぱりやめた</h2>
+<p>昨日は少し病んだ日記になっていたのでそれを反省した．
+ということで本日の日記で，修論の反省を書くことはしない．</p>
+<h2>命名規則</h2>
+<p>LaTeXで執筆作業を進めている際に地味にストレスのかかることとして，
+図・表・数式ラベルの命名がある．</p>
+<p>統一感のある命名規則を確立しておくと
+見栄えがよくなるのだが，
+絶対のルールを決めずになんとなく命名すると
+油断して<code>\label{制約-1}</code>，<code>\label{制約-2移項}</code>
+などとんでもないラベル名を生成してしまう．</p>
+<p>他人と共有するときに恥ずかしいし，
+なにより美しくないのでストレスである．
+オレオレ命名規則を確立してストレスから解法されたいのだが，
+なかなかルールが定まらない．</p>
+<p>少し話がそれるが，
+一般的なプログラムにおけるメソッド・変数名の命名規則に
+以下のようなものがある．</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>表記例</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アッパーキャメルケース</td>
+<td><code>GetInputReader</code></td>
+<td>単語の先頭が大文字．複合語の先頭は大文字．</td>
+</tr>
+<tr>
+<td>ローワーキャメルケース</td>
+<td><code>getInputReader</code></td>
+<td>単語の先頭が大文字．複合語の先頭は小文字．</td>
+</tr>
+<tr>
+<td>スネークケース</td>
+<td><code>get_input_reader</code></td>
+<td>アンダースコアを単語の区切りに使用．</td>
+</tr>
+<tr>
+<td>チェインケース</td>
+<td><code>get-input-reader</code></td>
+<td>ハイフンを単語の区切りに使用．</td>
+</tr>
+</tbody>
+</table>
+<p>これらは使う単語が決まっていて，それをどう区切るかのルールであるが，
+最低限この統一感はないと，かなり見栄えがお粗末だ．
+残念ながら私のプログラムは，
+アッパーキャメルとスネークが混ざった書き方をしていることが多いので，
+どちらかに統一していきたい．</p>
+<br><br>
+<div class="page_link">
+<a href="./20200126.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
