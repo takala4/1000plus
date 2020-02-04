@@ -1,0 +1,73 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200204</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年02月04日</h1>
+<h2>解析解を求めるということ</h2>
+<p>こんなツイートを見かけた．</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「数値計算で解けるのに解析解って必要？」に対する答えとして頭に入れておきたい（スタンリー・ファーロウの偏微分方程式、ここの解析解には無限級数や積分による表現も含む） <a href="https://t.co/Uxhx4latZH">pic.twitter.com/Uxhx4latZH</a></p>&mdash; ひさ (@hisagrmf) <a href="https://twitter.com/hisagrmf/status/1224322630112538624?ref_src=twsrc%5Etfw">February 3, 2020</a></blockquote>
+
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>以前，以下のように呟いていた私としては，うまく言語化された資料に出会えて少し嬉しい．</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">マシンパワーで大半の問題は解けてしまうこのご時世に，解析解を追求する本質的な意義はどこにあるのだろうか．つまり，input-outputにclosed formな関数関係を見出すご利益はなんだろう．腑に落ちる解釈ができず自問自答している．</p>&mdash; takala4 (@4planing) <a href="https://twitter.com/4planing/status/1198253556471484416?ref_src=twsrc%5Etfw">November 23, 2019</a></blockquote>
+
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>上のツイートを踏まえて，自分なりに解析解を求めるという行為について考えてみた．
+並列に並べるのは相応しくない部分もあるが，箇条書きでまとめる．</p>
+<ul>
+<li>時間依存の変数を扱う問題では，時刻について離散化する必要がない</li>
+<li>アルゴリズムを考えなくてよい</li>
+<li>収束保証や精度保証も考える必要がない</li>
+<li>いかなるInputに対しても，解を直ちに導出できる</li>
+<li>Input条件の陽関数として解を記述できる</li>
+<li>さまざまな物理パラメータ，初期条件，境界条件が解にどのような影響を与えるかわかる</li>
+<li>解の性質や規則性の議論がしやすい</li>
+<li>より複雑な上位モデルを構築したときに，数値計算の観点で安全なモジュールとなる</li>
+</ul>
+<p>反対に，数値解を求めるメリットとして，
+合法的にプログラミングができることを挙げておく．
+数式だけの完全な理論研究が逃れることができるのは，数値計算のメリットと言えよう（皮肉）</p>
+<br><br>
+<div class="page_link">
+<a href="./20200203.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
