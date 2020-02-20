@@ -1,0 +1,77 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200219</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年02月19日</h1>
+<p>Calvin KleinとKullback–Leibler divergenceがなんか似ていると常々思っている．</p>
+<blockquote>
+<ul>
+<li>Calvin Klein ：　アメリカのファッションデザイナー，また同名の世界的ファッションブランド</li>
+<li>Kullback–Leibler divergence : 確率論と情報理論における2つの確率分布の差異を計る尺度</li>
+</ul>
+</blockquote>
+<p>語感が似ているだけで，まったく関係ないように見える．しかし私にとっては，愛用の香水ブランドがCalvin Kleinであったり，データ解析でKullback–Leibler divergenceを使ったりと両単語はなにかと目にすることが多い．</p>
+<p>ちなみに，
+離散確率分布$P,Q$に対して，$P$の$Q$に対するKL-divergenceは以下のように定義される：</p>
+<p>$$
+D_{\mathrm{KL}}
+\right( 
+P || Q
+\left)
+\equiv \sum_{i} P(i) \log \dfrac{P(i)}{Q(i)}
+$$</p>
+<p>また，連続確率分布$P,Q$に対して，$P$の$Q$に対するKL-divergenceは以下のように定義される：</p>
+<p>$$
+D_{\mathrm{KL}}
+\right( 
+P || Q
+\left)
+\equiv \int^{\infty}_{-\infty} P(x) \log \dfrac{p(i)}{q(i)}
+\mathrm{d} t
+$$</p>
+<p>定義から明らかなように，divergenceと名乗っているが，距離の公理（非負性，非退化性，対称性，三角不等式）を満たさないので，数学的に厳密な距離ではない．</p>
+<br><br>
+<div class="page_link">
+<a href="./20200218.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a>
+<a href="./20200220.html"><div class="triangle_right"></div></a></div>
+</article>
+</html>
