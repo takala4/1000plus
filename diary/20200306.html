@@ -1,0 +1,74 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200306</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年03月06日</h1>
+<h2>テンパズル</h2>
+<blockquote>
+<p>テンパズル（10パズル）は、4桁の数字を一桁の数字4つとみなし、これに四則演算などを用いて10を作る遊び。メイクテン（make10）とも呼ばれる。切符の番号や車のナンバープレートなどでの短時間の遊びに利用され、日本経済新聞で渋滞時の時間の潰し方として紹介されたことがある。（<strong><a href="https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%B3%E3%83%91%E3%82%BA%E3%83%AB">テンパズル - Wikipedia</a></strong>）</p>
+</blockquote>
+<p>というお馴染みの遊びがある．</p>
+<p><br></p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">私が今までに出会ったテンパズルの最難問4つを紹介します。<br><br>⑴ 1199<br>⑵ 1337<br>⑶ 3478<br>⑷ 1158<br><br>ルール<br>・4つの数字と四則演算を使って10を作る<br>・数字の順番は入れ替え可能<br>・四則演算の使い方は自由<br>・例: 2346 → (6-4+3)×2=10<br><br>初見で全問解ける人は超絶頭が柔らかいです。</p>&mdash; しんめー (@WB_DataAnalyst) <a href="https://twitter.com/WB_DataAnalyst/status/1235701460697878529?ref_src=twsrc%5Etfw">March 5, 2020</a></blockquote>
+
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p><br></p>
+<p>こんなツイートを見かけたので解いてみた．
+10分くらいで解けたけど，筋はよいのだろうか？
+答えはこの記事の最下部に示す，</p>
+<p>興味深いのが，全715通り中552通りの組み合わせで10を作ることができるというもの．
+思ったより少ない気がした．wikipediaには一覧も載っている．
+渋滞時には楽しいゲームだ．</p>
+<hr />
+<p>こたえ</p>
+<ul>
+<li>1199 : $[ (1 \div 9) + 1 ] \times 9 = 10$</li>
+<li>1337 : $[ (7 \div 3) + 1 ] \times 3  = 10$</li>
+<li>3478 : $[ 3 - (7 \div 4)  ] \times 8  = 10$</li>
+<li>1158 : $8 \div [ 1 - (1 \div 5)  ]  = 10$</li>
+</ul>
+<p>若干3番目の問題が4番目の誘導ぽい(笑)</p>
+<br><br>
+<div class="page_link">
+<a href="./20200305.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
