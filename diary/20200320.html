@@ -1,0 +1,80 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200320</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年03月20日</h1>
+<h2>論文の固有識別id</h2>
+<p>よく使う論文検索エンジンは <strong><a href="https://scholar.google.co.jp/">Google Scholar</a></strong>
+であり，様々なサービスと提携して便利なのだが，ひとつだけ文句がある．</p>
+<p>（もしかしたら勘違いかもしれないが．．．）</p>
+<p>Googleは論文ごとに固有の識別idとして，result_idというものを
+各論文に付与している．
+これはGoogle scholarの検索結果には，レンダリングされないが
+論文html要素のidに設定されていることが確認できる．</p>
+<p>このresult_idをキーにして，引用被引用関係を一気にスクレイピングしようと
+画策したが問題が発生した．</p>
+<p>私の知りえた範囲では，このresult_idを用いて論文検索ができない．
+URLにパラメータとして付与するなどすれば，できるかと思ったがうまくいかなかった．</p>
+<p>もしかしたら，内部処理にしか使わないidなのかもしれないが，
+スクレイピングしたかった私にとっては痛手だった．</p>
+<h2>Microsoft Academic</h2>
+<p><strong><a href="https://academic.microsoft.com/home">Home | Microsoft Academic</a></strong> を
+ご存知だろうか．
+Google Scholarほど有名ではないが，かなり優秀な論文検索エンジンである．</p>
+<p>お目当ての引用被引用スクレイピングがGoogle Scholarでできなかったため，
+こちらにアタックしてみた．</p>
+<p>ざっと見た感じ，</p>
+<ul>
+<li>論文ごとの固有識別idも存在し，</li>
+<li>URLのパラメータとして渡せば，</li>
+<li>論文ページに飛べる</li>
+</ul>
+<p>ことがわかった．しかもreference一覧も整理されており，スクレイピングしやすそうだ．</p>
+<p>ということで鋭意コーディングを進めている．
+本業ではないことは重々承知しているが，
+ちょっとした便利ツール開発はすぐにのめり込んでしまう．
+あまり時間を使いすぎないようにしたい．</p>
+<br><br>
+<div class="page_link">
+<a href="./20200319.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
