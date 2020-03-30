@@ -1,0 +1,75 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200330</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年03月30日</h1>
+<p>最近，数値計算とシミュレーションという言葉が示す概念について，
+背景が異なる人と少し認識の違いを感じた．</p>
+<p>個人的には，次のように使い分けている：</p>
+<ul>
+<li>解析解</li>
+<li>数値計算（広義）<ul>
+<li>数値シミュレーション</li>
+<li>数値計算（狭義）</li>
+</ul>
+</li>
+</ul>
+<p>まず，解析解は言わずもがなclosed-formで解を記述する形式である．</p>
+<p>それに対し，数値計算（広義）は
+計算機による何らかの”繰り返し演算”を経て解を導出する方法と認識している．</p>
+<p>その中でも数値シミュレーションは，”繰り返し演算”に何らかの
+物理的意味やダイナミクスが存在するものと考えている．
+他方，数値計算（狭義）は数学的に解を求めるためだけの”繰り返し演算”
+を実行する方法と位置づけている．</p>
+<p>具体的には，物体の落下運動を解析する際に，</p>
+<ul>
+<li>数値シミュレーションでは，各繰り返し演算は”微小時間での落下運動”を表す＝暫定解が必ず実行可能</li>
+<li>数値計算（狭義）では，各繰り返し演算に物理的解釈はない＝暫定解が実行不可能でもよい</li>
+</ul>
+<p>といような具合だ．数値計算（狭義）での解の改訂方向に物理的意味をもたせる必要はない．</p>
+<p>もしかしたら，この認識は一般的に間違っているかもしれない．
+他人との議論の際に，少なくとも自分の発信物に齟齬がないように現状の認識を整理してみた．</p>
+<br><br>
+<div class="page_link">
+<a href="./20200329.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
