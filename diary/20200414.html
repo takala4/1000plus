@@ -1,0 +1,134 @@
+﻿
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>1000plus:20200414</title>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\(','\)']],
+        processEscapes: true
+      },
+      CommonHTML: { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+    </script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../github-markdown.css">
+    <style>
+    .markdown-body {
+        font-family: 'Noto Sans JP', sans-serif;
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+    </style>
+    <!-- Favi con -->
+    <link rel="shortcut icon" type="image/png" href="s">
+    </head>
+    <article class="markdown-body">
+<h1>2020年04月14日</h1>
+<p>離散型のSIRモデルを紹介する．</p>
+<h2>記号の定義</h2>
+<ul>
+<li>$S(t)$ : 時点$t$における未感染者数</li>
+<li>$I(t)$ : 時点$t$における感染者数</li>
+<li>$R(t)$ : 時点$t$における感染済かつ回復者数（免疫保持者数）</li>
+<li>$S(t)+I(t)+R(t) \equiv N(t)=N$ :総人口（死亡者数を含め保存されるものとする）</li>
+<li>$\beta$ : 未感染者が感染者と1回の接触で感染する確率</li>
+<li>$\gamma$ : 感染者が1日の内に回復し感染力を失う確率</li>
+</ul>
+<p>ここで，感染率$\beta$は人々の接触時間に依存しないものとする．</p>
+<p>(※)便宜的に各パラメータを定義する際，時間軸の単位を日としている</p>
+<h2>感染ダイナミクス</h2>
+<p>差分方程式を用いて感染ダイナミクスを表現する．</p>
+<p>時点$t$において，未感染者1人がのべ$j$人と接触したときに，感染から<strong>免れる確率</strong>は以下で与えられる：</p>
+<p>$$
+\left( 1 - \frac{\beta I(t)}{N} \right)^{j} 
+$$</p>
+<p>ここで，ある1人が1日にのべ$j$人と接触する確率を$P(j)$と定義すると，時点$t$から時点$t+1$の間に増加する感染者数の期待値は次のように書ける：
+$$
+S(t+1)-S(t) = 
+S(t) \times
+\sum^{\infty}_{j=0}
+\left[1-
+\left( 1 - \frac{\beta I(t)}{N} \right)^{m}
+\right]P(m)
+$$</p>
+<p>この感染者数の増分期待値および回復率$\gamma$を用いて，SIRダイナミクスは
+次の差分方程式で表される：</p>
+<p>$$
+  S(t+1) = S(t) -
+  S(t)
+  \sum^{\infty}_{j=0}
+  \left[1-
+  \left( 1 - \frac{\beta I(t)}{N} \right)^{j}
+  \right]P(j)
+$$</p>
+<p>$$
+  I(t+1) =   I(t) + S(t)
+  \sum^{\infty}_{j=0}
+  \left[1-
+  \left( 1 - \frac{\beta I(t)}{N} \right)^{j}
+  \right]P(j)　- \gamma I(t)
+$$</p>
+<p>$$
+  R(t+1) = R(t) + \gamma I(t)
+$$</p>
+<p>ここで，人口に対する各群の比率$\widehat{S}(t) \equiv \dfrac{S(t)}{N}
+,\widehat{I}(t) \equiv \dfrac{I(t)}{N}
+,\widehat{R}(t) \equiv \dfrac{R(t)}{N}$を導入すれば，先の差分方程式は以下に帰着する：</p>
+<p>$$
+  \widehat{S}(t+1) = \widehat{S}(t) -
+  \widehat{S}(t)
+  \sum^{\infty}_{j=0}
+  \left[1-
+  \left( 1 - \beta \widehat{I}(t) \right)^{j}
+  \right]P(j)
+$$</p>
+<p>$$
+  \widehat{I}(t+1) =   \widehat{I}(t) + 
+  \widehat{S}(t)
+  \sum^{\infty}_{j=0}
+  \left[1-
+  \left( 1 - \beta \widehat{I}(t) \right)^{j}
+  \right]P(j) -  \gamma \widehat{I}(t)
+$$</p>
+<p>$$
+  \widehat{R}(t+1) = \widehat{R}(t) + \gamma \widehat{I}(t)
+$$</p>
+<blockquote>
+<p>補足：$P(j)$が期待値$\lambda$のポアソン分布$P(j)=\lambda^{j}\mathrm{e}^{-\lambda}/j!$であるとき，時間ステップ長の極限$\Delta t \rightarrow 0$において，次に示す連続時間型SIRモデルと対応する．</p>
+<p>$$
+  \dfrac{\mathrm{d} \widehat{S}(t)}{\mathrm{d}t} = - 
+  \lambda \beta \widehat{S}(t) \widehat{I}(t)
+  $$</p>
+<p>$$
+  \dfrac{\mathrm{d} \widehat{I}(t)}{\mathrm{d}t} =
+  \lambda \beta \widehat{S}(t) \widehat{I}(t) - \gamma \widehat{I}(t)
+  $$</p>
+<p>$$
+  \dfrac{\mathrm{d} \widehat{R}(t)}{\mathrm{d}t} =
+  \gamma \widehat{I}(t)
+$$</p>
+<p>多くの連続時間モデルでは，$\lambda \beta$を感染率と定義しているケースが多い．このときの感染率は，ウイルス固有の値でなく人々の接触の仕方の情報（ポアソン分布）も含まれている．連続モデルと離散モデルの対応の詳細は<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/171302/1/1757-07.pdf">瀬野,2011</a>を参照した．</p>
+</blockquote>
+<br><br>
+<div class="page_link">
+<a href="./20200413.html"><div class="triangle_left"></div></a>
+<a href="../index.html"><div class="square_center"></div></a></div>
+</article>
+</html>
