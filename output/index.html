@@ -40,6 +40,31 @@
 
 <article>
   <div class="article__title">
+    <h1><a href="./20200508.html">2020年05月08日</a></h1>
+  </div>
+  <div class="article__meta">
+    </p>
+  </div>
+  <div class="article__text">
+    <p>例のSpringerの無料公開PDFを一括ダウンロードするコードを書いた．</p>
+<p>下記リンクから無料公開PDFの一覧excelファイルを入手する．</p>
+<p><strong><a href="https://www.springernature.com/gp/librarians/news-events/all-news-articles/industry-news-initiatives/free-access-to-textbooks-for-institutions-affected-by-coronaviru/17855960">Free access to a range of essential textbooks from all disciplines | For Librarians | Springer Nature</a></strong></p>
+<p>約400冊（ファイル）あるので，欲しいものだけ残して適当に間引く（行を削除）．
+<code>pdf</code>という名前のディレクトリを作成しておいて，以下のコードを実行すればO.K.</p>
+<p><code>time.sleep(10)</code>でリクエスト間隔を10秒に設定している．</p>
+<div class="highlight"><pre><span></span><span class="c1"># required module : pandas, urllib, re, time</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">urllib</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">excel_path</span> <span class="o">=</span> <span class="s1">&#39;Free+English+textbooks …</span></pre></div>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article__title">
     <h1><a href="./20200507.html">2020年05月07日</a></h1>
   </div>
   <div class="article__meta">
