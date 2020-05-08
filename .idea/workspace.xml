@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a145b741-aee1-4e99-a5ca-67c37551b6af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../diary/20191227.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20191227.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20191228.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20191228.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20191229.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20191229.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20191230.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20191230.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20191231.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20191231.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200101.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200101.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200102.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200102.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200103.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200103.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200104.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200104.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200105.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200105.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200106.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200106.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200107.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200107.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200108.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200108.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200109.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200109.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200110.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200110.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200111.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200111.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200112.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200112.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200113.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200113.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200114.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200114.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200115.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200115.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200116.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200116.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200117.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200117.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200118.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200118.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200119.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200119.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200120.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200120.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200121.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200121.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200122.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200122.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200123.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200123.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200124.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200124.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200125.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200125.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200126.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200126.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200127.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200127.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200128.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200128.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200129.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200129.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200130.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200130.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200131.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200131.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200201.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200201.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200202.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200202.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200203.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200203.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200204.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200204.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200205.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200205.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200206.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200206.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200207.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200207.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200208.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200208.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200209.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200209.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200210.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200210.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200211.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200211.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200212.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200212.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200213.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200213.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200214.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200214.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200215.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200215.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200216.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200216.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200217.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200217.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200218.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200218.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200219.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200219.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200220.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200220.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200221.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200221.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200222.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200222.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200223.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200223.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200224.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200224.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200225.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200225.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200226.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200226.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200227.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200227.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200228.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200228.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200229.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200229.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200301.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200301.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200302.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200302.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200303.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200303.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200304.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200304.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200305.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200305.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200306.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200306.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200307.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200307.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200308.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200308.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200309.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200309.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200310.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200310.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200311.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200311.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200312.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200312.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200313.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200313.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200314.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200314.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200315.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200315.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200316.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200316.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200317.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200317.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200318.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200318.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200319.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200319.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200320.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200320.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200321.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200321.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200322.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200322.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200323.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200323.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200324.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200324.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200325.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200325.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200326.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200326.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200327.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200327.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200328.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200328.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200329.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200329.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200330.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200330.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200331.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200331.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200401.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200401.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200402.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200402.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200403.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200405.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200405.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200406.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200406.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200407.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200407.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200408.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200408.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200409.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200409.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200410.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200410.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200411.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200411.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200412.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200412.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200413.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200413.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200414.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200414.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200415.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200415.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200416.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200416.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200417.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200417.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200418.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200418.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200419.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200419.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200420.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200420.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200421.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200421.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200422.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200422.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200423.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200423.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200424.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200424.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200425.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200425.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200426.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200426.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200427.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200427.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200428.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200428.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200429.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200429.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200430.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200430.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200501.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200501.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200502.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200502.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200503.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200503.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200504.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200504.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200505.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200505.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200506.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200506.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200507.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200507.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/20200508.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/20200508.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/theme/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/theme/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20191227.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20191227.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20191228.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20191228.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20191229.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20191229.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20191230.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20191230.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20191231.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20191231.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200101.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200101.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200102.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200102.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200103.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200103.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200104.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200104.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200105.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200105.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200106.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200106.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200107.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200107.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200108.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200108.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200109.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200109.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200110.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200110.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200111.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200111.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200112.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200112.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200113.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200113.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200114.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200114.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200115.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200115.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200116.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200116.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200117.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200117.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200118.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200118.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200119.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200119.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200120.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200120.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200121.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200121.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200122.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200122.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200123.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200123.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200124.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200124.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200125.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200125.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200126.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200126.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200127.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200127.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200128.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200128.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200129.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200129.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200130.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200130.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200131.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200131.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200201.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200201.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200202.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200202.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200203.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200203.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200204.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200204.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200205.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200205.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200206.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200206.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200207.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200207.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200208.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200208.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200209.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200209.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200210.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200210.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200211.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200211.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200212.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200212.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200213.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200213.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200214.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200214.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200215.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200215.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200216.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200216.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200217.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200217.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200218.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200218.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200219.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200219.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200220.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200220.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200221.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200221.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200222.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200222.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200223.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200223.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200224.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200224.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200225.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200225.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200226.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200226.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200227.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200227.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200228.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200228.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200229.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200229.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200301.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200301.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200302.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200302.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200303.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200303.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200304.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200304.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200305.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200305.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200306.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200306.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200307.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200307.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200308.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200308.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200309.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200309.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200310.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200310.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200311.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200311.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200312.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200312.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200313.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200313.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200314.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200314.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200315.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200315.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200316.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200316.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200317.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200317.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200318.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200318.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200319.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200319.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200320.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200320.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200321.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200321.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200322.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200322.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200323.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200323.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200324.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200324.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200325.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200325.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200326.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200326.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200327.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200327.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200328.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200328.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200329.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200329.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200330.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200330.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200331.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200331.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200401.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200401.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200402.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200402.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200403.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200405.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200405.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200406.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200406.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200407.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200407.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200408.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200408.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200409.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200409.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200410.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200410.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200411.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200411.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200412.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200412.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200413.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200413.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200414.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200414.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200415.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200415.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200416.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200416.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200417.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200417.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200418.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200418.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200419.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200419.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200420.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200420.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200421.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200421.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200422.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200422.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200423.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200423.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200424.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200424.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200425.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200425.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200426.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200426.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200427.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200427.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200428.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200428.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200429.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200429.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200430.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200430.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200501.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200501.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200502.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200502.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200503.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200503.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200504.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200504.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200505.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200505.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200506.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200506.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200507.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200507.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/20200508.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/20200508.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../output/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/theme/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../output/theme/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pelican-themes/pelican-hss-takala/static/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../pelican-themes/pelican-hss-takala/static/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pelican-themes/pelican-hss-takala/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pelican-themes/pelican-hss-takala/templates/article.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1bcwT5kMMqggyhgAAVLRIoMabhQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a145b741-aee1-4e99-a5ca-67c37551b6af" name="Default Changelist" comment="" />
+      <created>1588944693363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588944693363</updated>
+      <workItem from="1588944695770" duration="15000" />
+      <workItem from="1588944813000" duration="2747000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>
