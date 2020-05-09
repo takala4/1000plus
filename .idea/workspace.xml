@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a145b741-aee1-4e99-a5ca-67c37551b6af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/author/takala4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/author/takala4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/category/nikki.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/category/nikki.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/top_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/top_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/author/takala4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/author/takala4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/category/nikki.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/category/nikki.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../output/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/top_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/top_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pelican-themes/pelican-hss-takala/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pelican-themes/pelican-hss-takala/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +40,7 @@
       <updated>1588944693363</updated>
       <workItem from="1588944695770" duration="15000" />
       <workItem from="1588944813000" duration="2747000" />
-      <workItem from="1589022102583" duration="1534000" />
+      <workItem from="1589022102583" duration="2165000" />
     </task>
     <servers />
   </component>
