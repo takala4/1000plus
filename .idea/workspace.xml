@@ -19,6 +19,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -41,6 +43,8 @@
       <workItem from="1588944695770" duration="15000" />
       <workItem from="1588944813000" duration="2747000" />
       <workItem from="1589022102583" duration="2165000" />
+      <workItem from="1589107890581" duration="18000" />
+      <workItem from="1589109170576" duration="853000" />
     </task>
     <servers />
   </component>
