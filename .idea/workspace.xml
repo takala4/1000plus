@@ -3,6 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a145b741-aee1-4e99-a5ca-67c37551b6af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/archives.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/author/takala4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/author/takala4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/category/nikki.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/category/nikki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../diary/top_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/top_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/archives.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/author/takala4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/author/takala4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/category/nikki.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/category/nikki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../output/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output/top_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/top_index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +58,18 @@
       <workItem from="1589107890581" duration="18000" />
       <workItem from="1589109170576" duration="853000" />
       <workItem from="1589205164549" duration="1340000" />
+      <workItem from="1589287679340" duration="2633000" />
+      <workItem from="1589290404106" duration="73000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="681" y="259" key="run.anything.popup" timestamp="1589289809992">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112/2560.0.2048.1112/5120.0.1920.1040@0.0.2048.1112" timestamp="1589289809992" />
   </component>
 </project>
