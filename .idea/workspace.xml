@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a145b741-aee1-4e99-a5ca-67c37551b6af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/author/takala4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/author/takala4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/category/nikki.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/category/nikki.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../diary/top_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../diary/top_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/author/takala4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/author/takala4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/category/nikki.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/category/nikki.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../output/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../output/top_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../output/top_index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +48,7 @@
       <workItem from="1589205164549" duration="1340000" />
       <workItem from="1589287679340" duration="2633000" />
       <workItem from="1589290404106" duration="73000" />
+      <workItem from="1589375215689" duration="488000" />
     </task>
     <servers />
   </component>
