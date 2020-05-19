@@ -40,6 +40,187 @@
 
 <article>
   <div class="article__title">
+    <h1><a href="./20200519.html">2020年05月19日</a></h1>
+  </div>
+  <div class="article__meta">
+    </p>
+  </div>
+  <div class="article__text">
+<!--    要約-->
+<!--    <h2>常微分方程式の初期値問題の数値解法</h2>
+<p>新型コロナウイルスに関連して一躍知名度をあげたSIRモデル．
+このSIRモデルは，数学的に常微分方程式の初期値問題というクラスに分類され，
+その一般的な表現は次のようになる：
+</p>
+<div class="math">$$
+\begin{align}
+  &amp;\dfrac{\mathrm{d} \boldsymbol{x}(t)}{\mathrm{d} t} = \boldsymbol{F}(t,\boldsymbol{x}(t))
+  \\
+  &amp;\boldsymbol{x}(0) = \boldsymbol{x}_0
+\end{align}
+$$</div>
+<p>
+つまり，
+ベクトル関数<span class="math">\(\boldsymbol{F}\)</span>，初期値<span class="math">\(\boldsymbol{x}_{0}\)</span>が与えられたときに，
+関数<span class="math">\(\boldsymbol{x}(t)\)</span>を求める問題となる．
+このような常微分方程式の初期値問題に関しては，
+解の存在や一意性などの基本的なことは十分に分かっていると言って良い．
+しかしながら，
+その解析解については，
+特殊な …</p>-->
+<!--    全文-->
+    <h2>常微分方程式の初期値問題の数値解法</h2>
+<p>新型コロナウイルスに関連して一躍知名度をあげたSIRモデル．
+このSIRモデルは，数学的に常微分方程式の初期値問題というクラスに分類され，
+その一般的な表現は次のようになる：
+</p>
+<div class="math">$$
+\begin{align}
+  &amp;\dfrac{\mathrm{d} \boldsymbol{x}(t)}{\mathrm{d} t} = \boldsymbol{F}(t,\boldsymbol{x}(t))
+  \\
+  &amp;\boldsymbol{x}(0) = \boldsymbol{x}_0
+\end{align}
+$$</div>
+<p>
+つまり，
+ベクトル関数<span class="math">\(\boldsymbol{F}\)</span>，初期値<span class="math">\(\boldsymbol{x}_{0}\)</span>が与えられたときに，
+関数<span class="math">\(\boldsymbol{x}(t)\)</span>を求める問題となる．
+このような常微分方程式の初期値問題に関しては，
+解の存在や一意性などの基本的なことは十分に分かっていると言って良い．
+しかしながら，
+その解析解については，
+特殊な<span class="math">\(\boldsymbol{F}\)</span>の形状においてのみ求解可能であることが知られている．</p>
+<p>常微分方程式の初期値問題に対する代表的数値計算アルゴリズムである
+Euler法，Heun法，Runge-Kutta法の基本形は
+次のように表される：
+</p>
+<div class="math">$$
+\begin{align}
+  &amp;\boldsymbol{x}(0) = \boldsymbol{x}_{0}
+  \\
+  &amp;\boldsymbol{x}(t+1) = \boldsymbol{x}(t) + h \boldsymbol{F}(t,\boldsymbol{x}(t))
+\end{align}
+$$</div>
+<p>
+ここで<span class="math">\(h\)</span>は微小時間刻み幅である．
+<span class="math">\(\boldsymbol{F}(\cdot)\)</span>の選び方により，各種解法が得られる．</p>
+<h2>Euler法</h2>
+<p>Euler(オイラー)法は最も基本的な方法で，<span class="math">\(\boldsymbol{F}\)</span>を次のように<span class="math">\(\boldsymbol{F}\)</span>自身に選ぶ．
+つまり，局所的な線形近似によって，次の時点<span class="math">\(t+1\)</span>の解を定める：
+</p>
+<div class="math">$$
+\begin{align}
+ \boldsymbol{F}(\boldsymbol{x}(t),t) = \boldsymbol{F}(t,\boldsymbol{x}(t))
+\end{align}
+$$</div>
+<h2>Heun法</h2>
+<p>Heun(ホイン)法は次のように，
+Euler法で予測された時点における<span class="math">\(\boldsymbol{F}(\cdot)\)</span>
+の情報を含むように，<span class="math">\(\boldsymbol{F}\)</span>を定める：
+</p>
+<div class="math">$$
+\begin{align}
+  &amp;\boldsymbol{k}_{1} = \boldsymbol{F}(t,\boldsymbol{x}(t))
+  \\
+  &amp;\boldsymbol{k}_{2} = \boldsymbol{F}(t+h, \boldsymbol{x}+h\boldsymbol{k}_{1})
+  \\
+  &amp;\boldsymbol{F}(\boldsymbol{x}(t),t) = \dfrac{1}{2} \left( \boldsymbol{k}_{1} + \boldsymbol{k}_{2} \right)
+\end{align}
+$$</div>
+<h2>Runge-Kutta法</h2>
+<p>Runge-Kutta(ルンゲクッタ)法は，
+そこそこの効率を持つ方法であるため，常微分方程式の初期値
+問題の「定番の数値解法」としての地位を得ている．
+「まずは Runge-Kutta 法でやってみて，それでダメなら考える」
+というスタンスでもよいらしい．
+Runge-Kutta(ルンゲクッタ)法における<span class="math">\(\boldsymbol{F}\)</span>を次のように
+4点の情報を用いて定められる：
+</p>
+<div class="math">\begin{align}
+  &amp;\boldsymbol{k}_{1} = \boldsymbol{F}\left(t,\boldsymbol{x}(t)\right)
+  \\
+  &amp;\boldsymbol{k}_{2} = \boldsymbol{F}\left(t+\dfrac{h}{2}, \boldsymbol{x}+\dfrac{h}{2}\boldsymbol{k}_{1}\right)
+  \\
+  &amp;\boldsymbol{k}_{3} = \boldsymbol{F}\left(t+\dfrac{h}{2}, \boldsymbol{x}+\dfrac{h}{2}\boldsymbol{k}_{2}\right)
+  \\
+  &amp;\boldsymbol{k}_{4} =  \boldsymbol{F}\left(t+h, \boldsymbol{x}+h\boldsymbol{k}_{3}\right)
+  \\
+  &amp;\boldsymbol{F}(\boldsymbol{x}(t),t) = \dfrac{1}{6}
+  \left( \boldsymbol{k}_{1} + 2\boldsymbol{k}_{2} + 2\boldsymbol{k}_{3} + \boldsymbol{k}_{4} \right)
+\end{align}</div>
+<p><br>
+<br></p>
+<p>久しぶりに真面目なことを書いたが，実は過去レポのコピペ．．．
+元のSIRモデルに対して数値実験を行ったコードとレポートをGitHubに置いている．
+こちらには，参考文献なども記載している．</p>
+<p><strong><a href="https://github.com/takala4/takala-bako/blob/master/SIR/report.pdf">takala-bako/report.pdf at master · takala4/takala-bako</a></strong></p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article__title">
     <h1><a href="./20200518.html">2020年05月18日</a></h1>
   </div>
   <div class="article__meta">
