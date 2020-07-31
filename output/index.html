@@ -40,6 +40,94 @@
 
 <article>
   <div class="article__title">
+    <h1><a href="./20200731.html">2020年07月31日</a></h1>
+  </div>
+  <div class="article__meta">
+    </p>
+  </div>
+  <div class="article__text">
+<!--    要約-->
+<!--    <p>Pythonからローカルサーバーにsftp接続するときのメモ：</p>
+<div class="highlight"><pre><span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">import</span> <span class="nn">paramiko</span>
+
+<span class="n">hostname</span> <span class="o">=</span> <span class="s1">&#39;***********&#39;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">22</span>
+<span class="n">username</span> <span class="o">=</span> <span class="s1">&#39;*****&#39;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s1">&#39;*****&#39;</span>
+
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">SSHClient</span><span class="p">()</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">set_missing_host_key_policy</span><span class="p">(</span><span class="n">paramiko</span><span class="o">.</span><span class="n">AutoAddPolicy</span><span class="p">())</span>
+
+    <span class="n">client</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">hostname</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
+    <span class="n">sftp_connection</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_sftp</span><span class="p">()</span>
+
+
+    <span class="c1"># Get remote file</span>
+    <span class="n">sftp_connection</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;/path/to/remotefile&#39;</span><span class="p">,</span> <span class="s1">&#39;/path/to/local&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Send local file</span>
+    <span class="n">sftp_connection</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;/path/to/localfile&#39;</span><span class="p">,</span> <span class="s1">&#39;/path …</span></pre></div>-->
+<!--    全文-->
+    <p>Pythonからローカルサーバーにsftp接続するときのメモ：</p>
+<div class="highlight"><pre><span></span><span class="c1"># coding=utf-8</span>
+<span class="kn">import</span> <span class="nn">paramiko</span>
+
+<span class="n">hostname</span> <span class="o">=</span> <span class="s1">&#39;***********&#39;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">22</span>
+<span class="n">username</span> <span class="o">=</span> <span class="s1">&#39;*****&#39;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s1">&#39;*****&#39;</span>
+
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">SSHClient</span><span class="p">()</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">set_missing_host_key_policy</span><span class="p">(</span><span class="n">paramiko</span><span class="o">.</span><span class="n">AutoAddPolicy</span><span class="p">())</span>
+
+    <span class="n">client</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">hostname</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
+    <span class="n">sftp_connection</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">open_sftp</span><span class="p">()</span>
+
+
+    <span class="c1"># Get remote file</span>
+    <span class="n">sftp_connection</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;/path/to/remotefile&#39;</span><span class="p">,</span> <span class="s1">&#39;/path/to/local&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Send local file</span>
+    <span class="n">sftp_connection</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;/path/to/localfile&#39;</span><span class="p">,</span> <span class="s1">&#39;/path/to/remote&#39;</span><span class="p">)</span>
+
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">raise</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">client</span><span class="p">:</span>
+        <span class="n">client</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">sftp_connection</span><span class="p">:</span>
+        <span class="n">sftp_connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>参考：というかコピペ．．．</p>
+<p><strong><a href="http://y0m0r.hateblo.jp/entry/20121031/1351692579">paramikoを使ってsftp - 雑多なメモ置き場</a></strong></p>
+<p>本日はRaspberry Piで</p>
+<ul>
+<li>動体検知</li>
+<li>シャッター制御（カメラ）</li>
+<li>写真をサーバーに転送</li>
+</ul>
+<p>を実装した．実装といってもやり尽くされているので，コピペしたり手を動かしたり，
+NASのポートを開いたりしただけ．</p>
+<p>久しぶりの工作で童心に帰れた気がする．</p>
+<p><br>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">監視カメラができた <a href="https://t.co/5xP7hEe9sd">https://t.co/5xP7hEe9sd</a> <a href="https://t.co/bZV4zmPhrp">pic.twitter.com/bZV4zmPhrp</a></p>&mdash; takala4 (@4planing) <a href="https://twitter.com/4planing/status/1289107198971240448?ref_src=twsrc%5Etfw">July 31, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>さらに本日はtexliveのdocker imageをNASにぶち込むという作業もした．
+NAS上でtexlのコンパイルができることを確認した．</p>
+<p>ただ，sshでtexコマンドを使えない（つまりsshでコンテナに入れない）ので，これは今後の課題．</p>
+<p>気分転換もできたので，明日からはしっかり本業に戻ります．</p>
+<p>他人様の成果物をうまく繋ぎ合わせるのだけは得意だなあと自嘲した1日だった．</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article__title">
     <h1><a href="./20200730.html">2020年07月30日</a></h1>
   </div>
   <div class="article__meta">
@@ -2820,14 +2908,14 @@ Likeボタンに近い読めボタンを実装して，リストを見てくれ�
 
 
 <p>この関数を何回か呼び出すと</p>
-<div class="highlight"><pre><span></span>hoge()
-&gt;[&#39;Hi&#39;]
+<div class="highlight"><pre><span></span><span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 
-hoge()
-&gt;[&#39;Hi&#39;,&#39;Hi&#39;]
+<span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 
-hoge()
-&gt;[&#39;Hi&#39;,&#39;Hi&#39;,&#39;Hi&#39;]
+<span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 </pre></div>
 
 
@@ -2843,14 +2931,14 @@ hoge()
 
 
 <p>この関数を何回か呼び出すと</p>
-<div class="highlight"><pre><span></span>hoge()
-&gt;[&#39;Hi&#39;]
+<div class="highlight"><pre><span></span><span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 
-hoge()
-&gt;[&#39;Hi&#39;,&#39;Hi&#39;]
+<span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 
-hoge()
-&gt;[&#39;Hi&#39;,&#39;Hi&#39;,&#39;Hi&#39;]
+<span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 </pre></div>
 
 
@@ -3532,7 +3620,7 @@ PEP8に縛られるつもりはないが，統一感のあるコードを書い�
 <p><code>time.sleep(10)</code>でリクエスト間隔を10秒に設定している．</p>
 <div class="highlight"><pre><span></span><span class="c1"># required module : pandas, urllib, re, time</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">urllib</span>
 <span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">time</span>
@@ -3547,7 +3635,7 @@ PEP8に縛られるつもりはないが，統一感のあるコードを書い�
 <p><code>time.sleep(10)</code>でリクエスト間隔を10秒に設定している．</p>
 <div class="highlight"><pre><span></span><span class="c1"># required module : pandas, urllib, re, time</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">urllib</span>
 <span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">time</span>
@@ -3564,7 +3652,7 @@ PEP8に縛られるつもりはないが，統一感のあるコードを書い�
     <span class="n">download_URL</span> <span class="o">=</span> <span class="s1">&#39;https://link.springer.com/content/pdf/&#39;</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;DOI URL&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;http://doi.org&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;.pdf&#39;</span>
     <span class="n">editoin</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Edition&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
 
-    <span class="n">year</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;\d{4}&#39;</span><span class="p">,</span> <span class="n">editoin</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;\d</span><span class="si">{4}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">editoin</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">title</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Book Title&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span>
 
     <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;pdf</span><span class="se">\\</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s1">&#39;.pdf&#39;</span>
@@ -10025,47 +10113,44 @@ GPIFには年金を払う気にさせるような成果をだして欲しいも�
 <!--    要約-->
 <!--    <p>この日報を書く環境を起動するのがめんどくさいので，バッチ処理するファイルを作成した．</p>
 <p>nikki.bat</p>
-<div class="highlight"><pre><span></span>@echo off
+<div class="highlight"><pre><span></span><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
 
-cd %userprofile%\Documents\1000plus
-pushd diary_md
+<span class="n">cd</span><span class="w"> </span><span class="o">%</span><span class="n">userprofile</span><span class="o">%</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="mi">1000</span><span class="n">plus</span><span class="w"></span>
+<span class="n">pushd</span><span class="w"> </span><span class="n">diary_md</span><span class="w"></span>
 
-@echo off
+<span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
 
-set text=# %date:~0,4%年%date:~5,2%月%date:~8,2%日
+<span class="k">set</span><span class="w"> </span><span class="nc">text</span><span class="o">=</span><span class="err">#</span><span class="w"> </span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">%</span><span class="n">年</span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="n">月</span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="n">日</span><span class="w"></span>
 
-@REM 文字コードをUTF-8に変換
-chcp 65001
-echo %text% &gt;&gt;%date:~0,4%%date:~5,2%%date:~8,2%.md
+<span class="nv">@REM</span><span class="w"> </span><span class="n">文字コードをUTF</span><span class="o">-</span><span class="mi">8</span><span class="n">に変換</span><span class="w"></span>
+<span class="n">chcp</span><span class="w"> </span><span class="mi">65001</span><span class="w"></span>
+<span class="n">echo</span><span class="w"> </span><span class="o">%</span><span class="nc">text</span><span class="o">%</span><span class="w"> </span><span class="o">&gt;&gt;%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="p">.</span><span class="n">md</span><span class="w"></span>
 
-@REM 文字コードをShift-JISに戻す
-chcp 932
-
-@echo off …</pre></div>-->
+<span class="nv">@REM</span><span class="w"> </span><span class="n">文字コードをShift</span><span class="o">-</span><span class="n">JISに戻す …</span></pre></div>-->
 <!--    全文-->
     <p>この日報を書く環境を起動するのがめんどくさいので，バッチ処理するファイルを作成した．</p>
 <p>nikki.bat</p>
-<div class="highlight"><pre><span></span>@echo off
+<div class="highlight"><pre><span></span><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
 
-cd %userprofile%\Documents\1000plus
-pushd diary_md
+<span class="n">cd</span><span class="w"> </span><span class="o">%</span><span class="n">userprofile</span><span class="o">%</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="mi">1000</span><span class="n">plus</span><span class="w"></span>
+<span class="n">pushd</span><span class="w"> </span><span class="n">diary_md</span><span class="w"></span>
 
-@echo off
+<span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
 
-set text=# %date:~0,4%年%date:~5,2%月%date:~8,2%日
+<span class="k">set</span><span class="w"> </span><span class="nc">text</span><span class="o">=</span><span class="err">#</span><span class="w"> </span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">%</span><span class="n">年</span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="n">月</span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="n">日</span><span class="w"></span>
 
-@REM 文字コードをUTF-8に変換
-chcp 65001
-echo %text% &gt;&gt;%date:~0,4%%date:~5,2%%date:~8,2%.md
+<span class="nv">@REM</span><span class="w"> </span><span class="n">文字コードをUTF</span><span class="o">-</span><span class="mi">8</span><span class="n">に変換</span><span class="w"></span>
+<span class="n">chcp</span><span class="w"> </span><span class="mi">65001</span><span class="w"></span>
+<span class="n">echo</span><span class="w"> </span><span class="o">%</span><span class="nc">text</span><span class="o">%</span><span class="w"> </span><span class="o">&gt;&gt;%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="p">.</span><span class="n">md</span><span class="w"></span>
 
-@REM 文字コードをShift-JISに戻す
-chcp 932
+<span class="nv">@REM</span><span class="w"> </span><span class="n">文字コードをShift</span><span class="o">-</span><span class="n">JISに戻す</span><span class="w"></span>
+<span class="n">chcp</span><span class="w"> </span><span class="mi">932</span><span class="w"></span>
 
-@echo off
-popd
+<span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
+<span class="n">popd</span><span class="w"></span>
 
-@REM VS code起動
-Code -n . .\diary_md\%date:~0,4%%date:~5,2%%date:~8,2%.md
+<span class="nv">@REM</span><span class="w"> </span><span class="n">VS</span><span class="w"> </span><span class="n">code起動</span><span class="w"></span>
+<span class="n">Code</span><span class="w"> </span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="p">.</span><span class="err">\</span><span class="n">diary_md</span><span class="err">\</span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="p">.</span><span class="n">md</span><span class="w"></span>
 </pre></div>
 
 
