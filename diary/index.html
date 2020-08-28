@@ -40,6 +40,25 @@
 
 <article>
   <div class="article__title">
+    <h1><a href="./20200828.html">2020年08月28日</a></h1>
+  </div>
+  <div class="article__meta">
+    </p>
+  </div>
+  <div class="article__text">
+<!--    要約-->
+<!--    <p>研究棟の計画停電の存在をすっかり忘れて，PCの電源を入れたまま外出してしまった．
+慌てて後輩にシャットダウンを頼んだが危なかった．</p>
+<p>冷凍庫に入っているコーヒー豆も心配．</p>-->
+<!--    全文-->
+    <p>研究棟の計画停電の存在をすっかり忘れて，PCの電源を入れたまま外出してしまった．
+慌てて後輩にシャットダウンを頼んだが危なかった．</p>
+<p>冷凍庫に入っているコーヒー豆も心配．</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article__title">
     <h1><a href="./20200827.html">2020年08月27日</a></h1>
   </div>
   <div class="article__meta">
@@ -1170,7 +1189,7 @@ Dellのキーボードがどんなものか気になる．．．</p>
   <div class="article__text">
 <!--    要約-->
 <!--    <p>Pythonからローカルサーバーにsftp接続するときのメモ：</p>
-<div class="highlight"><pre><span></span><span class="c1"># coding=utf-8</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
 <span class="kn">import</span> <span class="nn">paramiko</span>
 
 <span class="n">hostname</span> <span class="o">=</span> <span class="s1">&#39;***********&#39;</span>
@@ -1191,10 +1210,10 @@ Dellのキーボードがどんなものか気になる．．．</p>
     <span class="n">sftp_connection</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;/path/to/remotefile&#39;</span><span class="p">,</span> <span class="s1">&#39;/path/to/local&#39;</span><span class="p">)</span>
 
     <span class="c1"># Send local file</span>
-    <span class="n">sftp_connection</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;/path/to/localfile&#39;</span><span class="p">,</span> <span class="s1">&#39;/path …</span></pre></div>-->
+    <span class="n">sftp_connection</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s1">&#39;/path/to/localfile&#39;</span><span class="p">,</span> <span class="s1">&#39;/path …</span></code></pre></div>-->
 <!--    全文-->
     <p>Pythonからローカルサーバーにsftp接続するときのメモ：</p>
-<div class="highlight"><pre><span></span><span class="c1"># coding=utf-8</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># coding=utf-8</span>
 <span class="kn">import</span> <span class="nn">paramiko</span>
 
 <span class="n">hostname</span> <span class="o">=</span> <span class="s1">&#39;***********&#39;</span>
@@ -1224,7 +1243,7 @@ Dellのキーボードがどんなものか気になる．．．</p>
         <span class="n">client</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">sftp_connection</span><span class="p">:</span>
         <span class="n">sftp_connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>参考：というかコピペ．．．</p>
@@ -4023,14 +4042,14 @@ Likeボタンに近い読めボタンを実装して，リストを見てくれ�
 <!--    要約-->
 <!--    <p>Twitterでみかけて注意しようと思ったこと．</p>
 <p>default引数をリストにすると，その変数に変更を加えた場合，呼び出しの度にdefault値が変わってしまう．</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hoge</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[]):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hoge</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[]):</span>
     <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Hi&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">values</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>この関数を何回か呼び出すと</p>
-<div class="highlight"><pre><span></span><span class="n">hoge</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">hoge</span><span class="p">()</span>
 <span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 
 <span class="n">hoge</span><span class="p">()</span>
@@ -4038,7 +4057,7 @@ Likeボタンに近い読めボタンを実装して，リストを見てくれ�
 
 <span class="n">hoge</span><span class="p">()</span>
 <span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>となる．頭に入れておこう．というかミュータブルなオブジェクトをデフォルト引数にした
@@ -4046,14 +4065,14 @@ Likeボタンに近い読めボタンを実装して，リストを見てくれ�
 <!--    全文-->
     <p>Twitterでみかけて注意しようと思ったこと．</p>
 <p>default引数をリストにすると，その変数に変更を加えた場合，呼び出しの度にdefault値が変わってしまう．</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hoge</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[]):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hoge</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[]):</span>
     <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Hi&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">values</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>この関数を何回か呼び出すと</p>
-<div class="highlight"><pre><span></span><span class="n">hoge</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">hoge</span><span class="p">()</span>
 <span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 
 <span class="n">hoge</span><span class="p">()</span>
@@ -4061,7 +4080,7 @@ Likeボタンに近い読めボタンを実装して，リストを見てくれ�
 
 <span class="n">hoge</span><span class="p">()</span>
 <span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>となる．頭に入れておこう．というかミュータブルなオブジェクトをデフォルト引数にした
@@ -4740,14 +4759,14 @@ PEP8に縛られるつもりはないが，統一感のあるコードを書い�
 <p>約400冊（ファイル）あるので，欲しいものだけ残して適当に間引く（行を削除）．
 <code>pdf</code>という名前のディレクトリを作成しておいて，以下のコードを実行すればO.K.</p>
 <p><code>time.sleep(10)</code>でリクエスト間隔を10秒に設定している．</p>
-<div class="highlight"><pre><span></span><span class="c1"># required module : pandas, urllib, re, time</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># required module : pandas, urllib, re, time</span>
 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">urllib</span>
 <span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
-<span class="n">excel_path</span> <span class="o">=</span> <span class="s1">&#39;Free+English+textbooks …</span></pre></div>-->
+<span class="n">excel_path</span> <span class="o">=</span> <span class="s1">&#39;Free+English+textbooks …</span></code></pre></div>-->
 <!--    全文-->
     <p>例のSpringerの無料公開PDFを一括ダウンロードするコードを書いた．</p>
 <p>下記リンクから無料公開PDFの一覧excelファイルを入手する．</p>
@@ -4755,7 +4774,7 @@ PEP8に縛られるつもりはないが，統一感のあるコードを書い�
 <p>約400冊（ファイル）あるので，欲しいものだけ残して適当に間引く（行を削除）．
 <code>pdf</code>という名前のディレクトリを作成しておいて，以下のコードを実行すればO.K.</p>
 <p><code>time.sleep(10)</code>でリクエスト間隔を10秒に設定している．</p>
-<div class="highlight"><pre><span></span><span class="c1"># required module : pandas, urllib, re, time</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># required module : pandas, urllib, re, time</span>
 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">urllib</span>
@@ -4780,7 +4799,7 @@ PEP8に縛られるつもりはないが，統一感のあるコードを書い�
     <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;pdf</span><span class="se">\\</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s1">&#39;.pdf&#39;</span>
 
     <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">download_URL</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
-</pre></div>
+</code></pre></div>
   </div>
 </article>
 <hr />
@@ -11235,7 +11254,7 @@ GPIFには年金を払う気にさせるような成果をだして欲しいも�
 <!--    要約-->
 <!--    <p>この日報を書く環境を起動するのがめんどくさいので，バッチ処理するファイルを作成した．</p>
 <p>nikki.bat</p>
-<div class="highlight"><pre><span></span><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
 
 <span class="n">cd</span><span class="w"> </span><span class="o">%</span><span class="n">userprofile</span><span class="o">%</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="mi">1000</span><span class="n">plus</span><span class="w"></span>
 <span class="n">pushd</span><span class="w"> </span><span class="n">diary_md</span><span class="w"></span>
@@ -11248,11 +11267,11 @@ GPIFには年金を払う気にさせるような成果をだして欲しいも�
 <span class="n">chcp</span><span class="w"> </span><span class="mi">65001</span><span class="w"></span>
 <span class="n">echo</span><span class="w"> </span><span class="o">%</span><span class="nc">text</span><span class="o">%</span><span class="w"> </span><span class="o">&gt;&gt;%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="p">.</span><span class="n">md</span><span class="w"></span>
 
-<span class="nv">@REM</span><span class="w"> </span><span class="n">文字コードをShift</span><span class="o">-</span><span class="n">JISに戻す …</span></pre></div>-->
+<span class="nv">@REM</span><span class="w"> </span><span class="n">文字コードをShift</span><span class="o">-</span><span class="n">JISに戻す …</span></code></pre></div>-->
 <!--    全文-->
     <p>この日報を書く環境を起動するのがめんどくさいので，バッチ処理するファイルを作成した．</p>
 <p>nikki.bat</p>
-<div class="highlight"><pre><span></span><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
 
 <span class="n">cd</span><span class="w"> </span><span class="o">%</span><span class="n">userprofile</span><span class="o">%</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="mi">1000</span><span class="n">plus</span><span class="w"></span>
 <span class="n">pushd</span><span class="w"> </span><span class="n">diary_md</span><span class="w"></span>
@@ -11273,7 +11292,7 @@ GPIFには年金を払う気にさせるような成果をだして欲しいも�
 
 <span class="nv">@REM</span><span class="w"> </span><span class="n">VS</span><span class="w"> </span><span class="n">code起動</span><span class="w"></span>
 <span class="n">Code</span><span class="w"> </span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="p">.</span><span class="err">\</span><span class="n">diary_md</span><span class="err">\</span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="p">.</span><span class="n">md</span><span class="w"></span>
-</pre></div>
+</code></pre></div>
 
 
 <p>これcode blockがハイライトされないな．今後修正する．とりあえず発見をまとめる．</p>

@@ -49,7 +49,7 @@
   <div class="article__text">
     <p>この日報を書く環境を起動するのがめんどくさいので，バッチ処理するファイルを作成した．</p>
 <p>nikki.bat</p>
-<div class="highlight"><pre><span></span><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
 
 <span class="n">cd</span><span class="w"> </span><span class="o">%</span><span class="n">userprofile</span><span class="o">%</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="mi">1000</span><span class="n">plus</span><span class="w"></span>
 <span class="n">pushd</span><span class="w"> </span><span class="n">diary_md</span><span class="w"></span>
@@ -70,7 +70,7 @@
 
 <span class="nv">@REM</span><span class="w"> </span><span class="n">VS</span><span class="w"> </span><span class="n">code起動</span><span class="w"></span>
 <span class="n">Code</span><span class="w"> </span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="p">.</span><span class="err">\</span><span class="n">diary_md</span><span class="err">\</span><span class="o">%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">%%</span><span class="nc">date</span><span class="err">:</span><span class="o">~</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="o">%</span><span class="p">.</span><span class="n">md</span><span class="w"></span>
-</pre></div>
+</code></pre></div>
 
 
 <p>これcode blockがハイライトされないな．今後修正する．とりあえず発見をまとめる．</p>
