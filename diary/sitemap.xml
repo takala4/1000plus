@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2020-08-29T17:21:51-00:00</lastmod>
+<lastmod>2020-08-30T15:48:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2020-08-29T17:21:51-00:00</lastmod>
+<lastmod>2020-08-30T15:48:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2020-08-29T17:21:51-00:00</lastmod>
+<lastmod>2020-08-30T15:48:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./top_index.html</loc>
-<lastmod>2020-08-29T17:21:51-00:00</lastmod>
+<lastmod>2020-08-30T15:48:33-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./20200830.html</loc>
+<lastmod>2020-08-30T00:00:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -1762,14 +1769,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./category/nikki.html</loc>
-<lastmod>2020-08-29T00:00:00+09:19</lastmod>
+<lastmod>2020-08-30T00:00:00+09:19</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./author/takala4.html</loc>
-<lastmod>2020-08-29T00:00:00+09:19</lastmod>
+<lastmod>2020-08-30T00:00:00+09:19</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
