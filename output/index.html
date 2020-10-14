@@ -40,6 +40,92 @@
 
 <article>
   <div class="article__title">
+    <h1><a href="./20201014.html">2020年10月14日</a></h1>
+  </div>
+  <div class="article__meta">
+    </p>
+  </div>
+  <div class="article__text">
+<!--    要約-->
+<!--    <p>かねてからやりたいと思っていた積読リストのタイル表示を
+実装した．</p>
+<p><strong><a href="https://takala4.github.io/cv/books.html">積読リスト</a></strong></p>
+<p>想像通りのものが作れたので満足．</p>
+<p>1点詰まった点を紹介する．</p>
+<p>積読リストの各書籍にはAmazonのリンクを付与している．
+AmazonはASINという10桁のコードでAmazon商品を管理しており，
+商品リンクもASINに基づいた生成することができる．
+書籍の場合，基本的にはISBN-10に対応する．</p>
+<p>しかし，
+書籍本体のバーコードは基本的にISBN-13
+となっているため，書籍本体から取得したバーコードデータベースから
+Amazonのリンクを生成するには，ISBN-13からISBN-10に変換する操作
+が必要となる．</p>
+<p>この変換は単射であるので
+理論上は簡単にできるはずだが，
+手続きがややこしいのでネットで見つけたコピペコードで対応していた．
+ところが，これが間違っていたようでAmazonへの正しいリンクをうまく
+生成できていなかった．</p>
+<p>詳細な手続きは（自分でもよくわからないので）割愛するが，
+正しい変換コードを以下に示しておく．</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">jan_to_asin</span><span class="p">(</span><span class="n">jan13</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">jan13</span><span class="p">)[</span><span class="mi">3</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+        <span class="n">c</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i …</span></code></pre></div>-->
+<!--    全文-->
+    <p>かねてからやりたいと思っていた積読リストのタイル表示を
+実装した．</p>
+<p><strong><a href="https://takala4.github.io/cv/books.html">積読リスト</a></strong></p>
+<p>想像通りのものが作れたので満足．</p>
+<p>1点詰まった点を紹介する．</p>
+<p>積読リストの各書籍にはAmazonのリンクを付与している．
+AmazonはASINという10桁のコードでAmazon商品を管理しており，
+商品リンクもASINに基づいた生成することができる．
+書籍の場合，基本的にはISBN-10に対応する．</p>
+<p>しかし，
+書籍本体のバーコードは基本的にISBN-13
+となっているため，書籍本体から取得したバーコードデータベースから
+Amazonのリンクを生成するには，ISBN-13からISBN-10に変換する操作
+が必要となる．</p>
+<p>この変換は単射であるので
+理論上は簡単にできるはずだが，
+手続きがややこしいのでネットで見つけたコピペコードで対応していた．
+ところが，これが間違っていたようでAmazonへの正しいリンクをうまく
+生成できていなかった．</p>
+<p>詳細な手続きは（自分でもよくわからないので）割愛するが，
+正しい変換コードを以下に示しておく．</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">jan_to_asin</span><span class="p">(</span><span class="n">jan13</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">jan13</span><span class="p">)[</span><span class="mi">3</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+        <span class="n">c</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">i</span><span class="p">)</span>
+
+    <span class="n">d</span> <span class="o">=</span> <span class="n">c</span> <span class="o">%</span> <span class="mi">11</span>
+
+
+    <span class="k">if</span> <span class="n">d</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">dd</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">d</span><span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">dd</span> <span class="o">=</span> <span class="s1">&#39;X&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">dd</span> <span class="o">=</span> <span class="mi">11</span> <span class="o">-</span> <span class="n">d</span>
+
+
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">dd</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>まあ解決できたのでよしッ．</p>
+  </div>
+</article>
+<hr />
+<article>
+  <div class="article__title">
     <h1><a href="./20201013.html">2020年10月13日</a></h1>
   </div>
   <div class="article__meta">
