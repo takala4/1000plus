@@ -228,7 +228,7 @@ main article .article__text code {
     padding: .2em 0;
     color: #8B0000;
     font-family: 'Roboto Mono', monospace;
-    /* background: #eee; */
+    background: #eee;
     border-radius: 3px
 }
 
