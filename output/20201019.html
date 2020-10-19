@@ -24,7 +24,7 @@
 
   <title>
     1000plus
-&ndash; 2020年01月01日  </title>
+&ndash; 2020年10月19日  </title>
 
 </head>
 
@@ -41,51 +41,17 @@
 
 <article>
   <div class="article__title">
-    <h1><a href="./20200101.html">2020年01月01日</a></h1>
+    <h1><a href="./20201019.html">2020年10月19日</a></h1>
   </div>
   <div class="article__meta">
     </p>
   </div>
   <div class="article__text">
-    <p>この日報を書く環境を起動するのがめんどくさいので，バッチ処理するファイルを作成した．</p>
-<p>nikki.bat</p>
-<div class="highlight"><pre><span></span>@echo off
-
-cd %userprofile%\Documents\1000plus
-pushd diary_md
-
-@echo off
-
-set text=# %date:~0,4%年%date:~5,2%月%date:~8,2%日
-
-@REM 文字コードをUTF-8に変換
-chcp 65001
-echo %text% &gt;&gt;%date:~0,4%%date:~5,2%%date:~8,2%.md
-
-@REM 文字コードをShift-JISに戻す
-chcp 932
-
-@echo off
-popd
-
-@REM VS code起動
-Code -n . .\diary_md\%date:~0,4%%date:~5,2%%date:~8,2%.md
-</pre></div>
-
-
-<p>これcode blockがハイライトされないな．今後修正する．とりあえず発見をまとめる．</p>
-<ul>
-<li><code>%userprofile%\Documents</code>でドキュメントフォルダのpathになる</li>
-<li><code>cd</code>ではなく<code>pushd</code>でディレクトリ移動すると，<code>popd</code>で移動前のディレクトリに戻れる</li>
-<li>20200101のような8桁の年月日は<code>%date:~0,4%%date:~5,2%%date:~8,2%</code>で取得できる</li>
-<li>UTF-8でファイルを作成し書き込みたい場合，<code>chcp</code>でコマンドプロンプト環境の文字コードを変更する必要がある</li>
-<li>VS Codeはなんと<code>Code</code>コマンドでパスが通っている．オプション<code>-n</code>はnew．作業ディレクトリとopenしたいファイルパスを引数で与える．</li>
-</ul>
-<h2>今日のメモ：</h2>
-<ul>
-<li>node/link disjoint paths : nodeまたはlinkを共有しない経路</li>
-<li>disjoint sets : 互いに素な集合</li>
-</ul>
+    <p>モノが多いというのが昔からの悩み．
+加えてわりと雑多な環境でも生きていける耐性が強いので，
+自分の部屋も研究室デスクもとても散らかっている．．．</p>
+<p>デキる男感がないので断捨離・整理整頓を
+ちゃんとしていこうと思う．</p>
   </div>
   <!-- <div align="center">
     <span class="heart"></span><span>4</span>
@@ -99,18 +65,18 @@ Code -n . .\diary_md\%date:~0,4%%date:~5,2%%date:~8,2%.md
 
     <div class="social-tools__buttons">
       <a class="tweet-blogpost-button"
-         href="https://twitter.com/share?text=1000plus - 2020年01月01日"
+         href="https://twitter.com/share?text=1000plus - 2020年10月19日"
          onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470'); return false;" >
         <i class="fa fa-twitter"></i>
       </a>
       <a class="facebook-share-button"
-         href="https://www.facebook.com/sharer/sharer.php?u=./20200101.html"
+         href="https://www.facebook.com/sharer/sharer.php?u=./20201019.html"
          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" >
         <i class="fa fa-facebook"></i>
       </a>
-      <a href="http://b.hatena.ne.jp/entry/./20200101.html"
+      <a href="http://b.hatena.ne.jp/entry/./20201019.html"
          class="hatebu-share-button hatena-bookmark-button"
-         data-hatena-bookmark-title="1000plus - 2020年01月01日"
+         data-hatena-bookmark-title="1000plus - 2020年10月19日"
          data-hatena-bookmark-layout="simple"
          title="このエントリーをはてなブックマークに追加" >
         <i class="fa fa-hatebu"></i>
@@ -122,13 +88,13 @@ Code -n . .\diary_md\%date:~0,4%%date:~5,2%%date:~8,2%.md
       ></script>
 
       <a class="pocket-add-button"
-         href="https://getpocket.com/edit?url=./20200101.html&title=2020年01月01日"
+         href="https://getpocket.com/edit?url=./20201019.html&title=2020年10月19日"
          onclick="window.open(this.href, 'add-to-get-pocket', 'width=490,height=530');return false;"
          title="add to pocket" >
         <i class="fa fa-get-pocket"></i>
       </a>
       <a class="google-plus-share-button"
-         href="https://plus.google.com/share?url=./20200101.html"
+         href="https://plus.google.com/share?url=./20201019.html"
          onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" >
         <i class="fa fa-google-plus"></i>
       </a>
@@ -141,9 +107,9 @@ Code -n . .\diary_md\%date:~0,4%%date:~5,2%%date:~8,2%.md
 <!--  -->
 <!--  -->
   <div align="center">
-    <a href="20191231.html"><div class="triangle_left"></div></a>
+    <a href="20201018.html"><div class="triangle_left"></div></a>
     <a href="."><div class="square_center"></div></a>
-    <a href="20200102.html"><div class="triangle_right"></div></a>
+    <a href="20201020.html"><div class="triangle_right"></div></a>
   </div>    
 </article>
 
