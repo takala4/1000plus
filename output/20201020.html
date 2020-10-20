@@ -24,7 +24,7 @@
 
   <title>
     1000plus
-&ndash; 2020年05月22日  </title>
+&ndash; 2020年10月20日  </title>
 
 </head>
 
@@ -41,34 +41,37 @@
 
 <article>
   <div class="article__title">
-    <h1><a href="./20200522.html">2020年05月22日</a></h1>
+    <h1><a href="./20201020.html">2020年10月20日</a></h1>
   </div>
   <div class="article__meta">
     </p>
   </div>
   <div class="article__text">
-    <p>Twitterでみかけて注意しようと思ったこと．</p>
-<p>default引数をリストにすると，その変数に変更を加えた場合，呼び出しの度にdefault値が変わってしまう．</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hoge</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[]):</span>
-    <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Hi&#39;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">values</span>
+    <p>論文の図表は美しくありたいが，すべての図表をTikzで描く（書く？）のは手間である．</p>
+<p>これは長年の懸案であったがずっと放置していた．
+本日重い腰をあげて少しシステム構成を考えてみたところ，
+局所最適解が見つかった気がするのでメモしておく．</p>
+<p>まず描画ツールはMS power pointを使う．
+なんだかんだ直観的にお絵描きできるメリットは大きい．</p>
+<p>数式の記述はTeX記法がそのまま使える <strong><a href="http://www.jonathanleroux.org/software/iguanatex/">IguanaTex</a></strong> 
+を用いる．power pointのアドオンとして導入してあげればOK．</p>
+<p>ただしIguanaTexだけでは，ラスタ形式で数式オブジェクトが出力されてしまう．
+ベクタ形式のオブジェクトとして扱うには，<strong><a href="https://tex2img.tech/">TeX2img</a></strong>を別途ダウンロードしておく必要がある．</p>
+<p>IguanaTexの設定でTeX2imgのPathを適切に設定しおけば，ベクタ形式の数式オブジェクトを作成できる．
+ここらへんは以下を参考にどうぞ．</p>
+<p><strong><a href="https://meltingrabbit.com/blog/article/2018061801/">【フォント】IguanaTexでPowerPointの数式フォントをまともにする - 溶けかけてるうさぎ - BLOG</a></strong></p>
+<p>次にpower pointのスライドをpdfとして出力する．
+大きな余白が存在する場合は，次のコマンドを実行して余白を削る．</p>
+<div class="highlight"><pre><span></span><code><span class="err">pdfcrop hoge.pdf</span>
 </code></pre></div>
 
 
-<p>この関数を何回か呼び出すと</p>
-<div class="highlight"><pre><span></span><code><span class="n">hoge</span><span class="p">()</span>
-<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
-
-<span class="n">hoge</span><span class="p">()</span>
-<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
-
-<span class="n">hoge</span><span class="p">()</span>
-<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
-</code></pre></div>
-
-
-<p>となる．頭に入れておこう．というかミュータブルなオブジェクトをデフォルト引数にした
-関数を作るのをやめよう．</p>
+<p>pdfcropコマンドは，TeXliveがインストールされていれば使えるはず．</p>
+<p>以上でいい感じのpdfが用意できるので，あとは<code>.tex</code>ファイルの中でincludegraphicsするだけ．</p>
+<p>かなり不愛想な紹介になったが，まあ自分用のメモなので．．．</p>
+<p>ちなみに</p>
+<p><strong><a href="https://note.com/assistdev/n/nbdce484a091f">PowerPointの図からInkscapeで余白のないPDFとEPSファイルを作成する方法｜吉川 雅博｜note</a></strong></p>
+<p>こんな方法もある．こちらも試してみたが悪くない感じだった．最終的にできるpdfの見映えは同じ．</p>
   </div>
   <!-- <div align="center">
     <span class="heart"></span><span>4</span>
@@ -82,18 +85,18 @@
 
     <div class="social-tools__buttons">
       <a class="tweet-blogpost-button"
-         href="https://twitter.com/share?text=1000plus - 2020年05月22日"
+         href="https://twitter.com/share?text=1000plus - 2020年10月20日"
          onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470'); return false;" >
         <i class="fa fa-twitter"></i>
       </a>
       <a class="facebook-share-button"
-         href="https://www.facebook.com/sharer/sharer.php?u=./20200522.html"
+         href="https://www.facebook.com/sharer/sharer.php?u=./20201020.html"
          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" >
         <i class="fa fa-facebook"></i>
       </a>
-      <a href="http://b.hatena.ne.jp/entry/./20200522.html"
+      <a href="http://b.hatena.ne.jp/entry/./20201020.html"
          class="hatebu-share-button hatena-bookmark-button"
-         data-hatena-bookmark-title="1000plus - 2020年05月22日"
+         data-hatena-bookmark-title="1000plus - 2020年10月20日"
          data-hatena-bookmark-layout="simple"
          title="このエントリーをはてなブックマークに追加" >
         <i class="fa fa-hatebu"></i>
@@ -105,13 +108,13 @@
       ></script>
 
       <a class="pocket-add-button"
-         href="https://getpocket.com/edit?url=./20200522.html&title=2020年05月22日"
+         href="https://getpocket.com/edit?url=./20201020.html&title=2020年10月20日"
          onclick="window.open(this.href, 'add-to-get-pocket', 'width=490,height=530');return false;"
          title="add to pocket" >
         <i class="fa fa-get-pocket"></i>
       </a>
       <a class="google-plus-share-button"
-         href="https://plus.google.com/share?url=./20200522.html"
+         href="https://plus.google.com/share?url=./20201020.html"
          onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" >
         <i class="fa fa-google-plus"></i>
       </a>
@@ -124,9 +127,9 @@
 <!--  -->
 <!--  -->
   <div align="center">
-    <a href="20200521.html"><div class="triangle_left"></div></a>
+    <a href="20201019.html"><div class="triangle_left"></div></a>
     <a href="."><div class="square_center"></div></a>
-    <a href="20200523.html"><div class="triangle_right"></div></a>
+    <a href="20201021.html"><div class="triangle_right"></div></a>
   </div>    
 </article>
 
