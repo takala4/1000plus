@@ -54,18 +54,18 @@
 </ul>
 <p>いい加減めんどくさいので，暇つぶしに適当にコードを書いた．</p>
 <p>clip_comma.py</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyperclip</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyperclip</span>
 
 <span class="n">text</span> <span class="o">=</span> <span class="n">pyperclip</span><span class="o">.</span><span class="n">paste</span><span class="p">()</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;。&#39;</span><span class="p">,</span> <span class="s1">&#39;．&#39;</span><span class="p">)</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;、&#39;</span><span class="p">,</span> <span class="s1">&#39;，&#39;</span><span class="p">)</span>
 
 <span class="n">pyperclip</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</code></pre></div>
+</pre></div>
 
 
 <p>clip_newline.py</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyperclip</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyperclip</span>
 
 
 <span class="n">text</span> <span class="o">=</span> <span class="n">pyperclip</span><span class="o">.</span><span class="n">paste</span><span class="p">()</span>
@@ -73,12 +73,12 @@
 <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
 
 <span class="n">pyperclip</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</code></pre></div>
+</pre></div>
 
 
 <p>pathの通ったディレクトリ<code>Documents/my-script</code>に以下のようなbatファイルを用意</p>
-<div class="highlight"><pre><span></span><code>python <span class="nv">%userprofile:\=/%</span>/Documents/my-script/XXX.py
-</code></pre></div>
+<div class="highlight"><pre><span></span>python <span class="nv">%userprofile:\=/%</span>/Documents/my-script/XXX.py
+</pre></div>
 
 
 <p>ペーストする前にコマンド実行すればクリップボードの文字列が
