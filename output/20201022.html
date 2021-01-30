@@ -48,17 +48,17 @@
   </div>
   <div class="article__text">
     <p>pdfcropのbatを書いた．pathが通っていれば，コマンド<code>crop FILENAME</code>で実行可能．</p>
-<div class="highlight"><pre><span></span><code><span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
+<div class="highlight"><pre><span></span>@echo off
 
-<span class="k">set</span><span class="w"> </span><span class="n">filename</span><span class="o">=%</span><span class="mi">1</span><span class="w"></span>
+set filename=%1
 
-<span class="n">pdfcrop</span><span class="w"> </span><span class="o">%</span><span class="n">filename</span><span class="o">%</span><span class="w"></span>
+pdfcrop %filename%
 
-<span class="nv">@echo</span><span class="w"> </span><span class="k">off</span><span class="w"></span>
-<span class="n">del</span><span class="w"> </span><span class="o">%</span><span class="n">filename</span><span class="o">%</span><span class="w"></span>
+@echo off
+del %filename%
 
-<span class="n">rename</span><span class="w"> </span><span class="o">%</span><span class="nl">filename</span><span class="p">:.</span><span class="n">pdf</span><span class="o">=-</span><span class="n">crop</span><span class="p">.</span><span class="n">pdf</span><span class="o">%</span><span class="w"> </span><span class="o">%</span><span class="n">filename</span><span class="o">%</span><span class="w"></span>
-</code></pre></div>
+rename %filename:.pdf=-crop.pdf% %filename%
+</pre></div>
 
 
 <p>自動化していこう．</p>
