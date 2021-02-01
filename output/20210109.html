@@ -48,7 +48,7 @@
   </div>
   <div class="article__text">
     <p>完全に自分用のメモ．texファイル中にある命題・補題・系の一覧を作るためのpythonコード：</p>
-<div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;main.tex&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;main.tex&#39;</span>
 
 <span class="n">Target_Str_List</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;\label{Pro_&#39;</span><span class="p">,</span> <span class="s1">&#39;\label{Lem_&#39;</span><span class="p">,</span> <span class="s1">&#39;\label{Cor_&#39;</span><span class="p">]</span>
 <span class="n">ProLemCor_List</span> <span class="o">=</span> <span class="p">[]</span>
@@ -65,8 +65,8 @@
     <span class="n">ProLemCor_name</span> <span class="o">=</span> <span class="n">Label_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 
     <span class="n">ref_str</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">ProLemCor_name</span> <span class="o">+</span> <span class="s1">&#39;ref{&#39;</span> <span class="o">+</span> <span class="n">Label_name</span> <span class="o">+</span> <span class="s1">&#39;}&#39;</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">ref_str</span><span class="p">)</span>
-</pre></div>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ref_str</span><span class="p">)</span>
+</code></pre></div>
 
 
 <p>極めて非効率であるが動くのでヨシっ．</p>
