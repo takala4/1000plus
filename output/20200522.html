@@ -49,22 +49,22 @@
   <div class="article__text">
     <p>Twitterでみかけて注意しようと思ったこと．</p>
 <p>default引数をリストにすると，その変数に変更を加えた場合，呼び出しの度にdefault値が変わってしまう．</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hoge</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[]):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">hoge</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[]):</span>
     <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Hi&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">values</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>この関数を何回か呼び出すと</p>
-<div class="highlight"><pre><span></span>hoge()
-&gt;[&#39;Hi&#39;]
+<div class="highlight"><pre><span></span><code><span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 
-hoge()
-&gt;[&#39;Hi&#39;,&#39;Hi&#39;]
+<span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
 
-hoge()
-&gt;[&#39;Hi&#39;,&#39;Hi&#39;,&#39;Hi&#39;]
-</pre></div>
+<span class="n">hoge</span><span class="p">()</span>
+<span class="o">&gt;</span><span class="p">[</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">,</span><span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
+</code></pre></div>
 
 
 <p>となる．頭に入れておこう．というかミュータブルなオブジェクトをデフォルト引数にした
