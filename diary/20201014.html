@@ -68,7 +68,7 @@ Amazonのリンクを生成するには，ISBN-13からISBN-10に変換する操
 生成できていなかった．</p>
 <p>詳細な手続きは（自分でもよくわからないので）割愛するが，
 正しい変換コードを以下に示しておく．</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">jan_to_asin</span><span class="p">(</span><span class="n">jan13</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">jan_to_asin</span><span class="p">(</span><span class="n">jan13</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">jan13</span><span class="p">)[</span><span class="mi">3</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span>
     <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
     <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>
@@ -88,7 +88,7 @@ Amazonのリンクを生成するには，ISBN-13からISBN-10に変換する操
 
 
     <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">dd</span><span class="p">)</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>まあ解決できたのでよしッ．</p>
