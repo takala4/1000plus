@@ -45,6 +45,6 @@ chcp 932
 
 @REM @REM write index.md--------------------
 :WriteIndex
-set text=* Day%days:days:=% : [%title:title: =%](..\docs\%filename%.html)
+set text=* Day%days:days:=% : [%title:title: =%](.\%filename%.html)
 echo %text% >>source\index.md
 exit /b
