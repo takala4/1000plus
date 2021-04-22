@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20200506</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20200506</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>2020年05月06日現在， このブログ（日記）はPython製の静的サイトジェネレータPelicanによって構成されている．まだまだシステムやUIに改善の余地があるので， issueにまとめていつか対応しようとしている．</p>
+<p><strong><a href="https://github.com/takala4/1000plus/issues">Issues · takala4/1000plus</a></strong></p>
+<iframe src="data:text/html; charset=utf-8;charset=utf-8,%3C%21DOCTYPE%20html%3E%3Chtml%3E%3Chead%3E%3Cmeta%20charset%3D%22UTF%2D8%22%3E%3Ctitle%3EGitHub%20Issue%20widget%3C%2Ftitle%3E%3Cscript%3E%22use%20strict%22%3Bfunction%20loadJSONP%28e%2Ct%29%7Bvar%20n%3Ddocument%2EgetElementsByTagName%28%22head%22%29%5B0%5D%2Ca%3Ddocument%2EcreateElement%28%22script%22%29%3Ba%2Esrc%3De%2B%22%26callback%3D%22%2Bt%2Cn%2EinsertBefore%28a%2Cn%2EfirstChild%29%7Dfunction%20shuffle%28e%29%7Bfor%28var%20t%2Cn%2Ca%3De%2Elength%3Ba%3B%29n%3DMath%2Efloor%28Math%2Erandom%28%29%2Aa%2D%2D%29%2Ct%3De%5Ba%5D%2Ce%5Ba%5D%3De%5Bn%5D%2Ce%5Bn%5D%3Dt%3Breturn%20e%7Dfunction%20APICallback%28e%29%7Bfor%28var%20t%3Ddocument%2EgetElementById%28%22js%2Dmain%2Dcontent%22%29%2Cn%3Dparams%2Erandom%3Fshuffle%28e%2Edata%29%3Ae%2Edata%2Ca%3Ddocument%2EcreateElement%28%22ul%22%29%2Cr%3DparseInt%28params%2Elimit%2C10%29%2Ci%3DMath%2Emin%28r%2Cn%2Elength%29%2Co%3D0%3Bi%3Eo%3Bo%2B%2B%29%7Bvar%20l%3Dn%5Bo%5D%2Cs%3Ddocument%2EcreateElement%28%22li%22%29%2Cd%3Ddocument%2EcreateElement%28%22a%22%29%3Bd%2Ehref%3Dl%2Ehtml%5Furl%2Cd%2EtextContent%3Dl%2Etitle%2Cd%2EsetAttribute%28%22target%22%2C%22%5Fblank%22%29%2Cs%2EappendChild%28d%29%2Ca%2EappendChild%28s%29%7Dt%2EappendChild%28a%29%7Dvar%20params%3Dfunction%28%29%7Bfor%28var%20e%2Ct%3D%5B%5D%2Cn%3Dwindow%2Elocation%2Ehref%2Eslice%28window%2Elocation%2Ehref%2EindexOf%28%22%3F%22%29%2B1%29%2Esplit%28%22%26%22%29%2Ca%3D0%2Cr%3Dn%2Elength%3Br%3Ea%3Ba%2B%2B%29e%3Dn%5Ba%5D%2Esplit%28%22%3D%22%29%2Ct%2Epush%28e%5B0%5D%29%2Ct%5Be%5B0%5D%5D%3De%5B1%5D%7C%7C%210%3Breturn%22undefined%22%3D%3Dtypeof%20t%2Estate%26%26%28t%2Estate%3D%22open%22%29%2C%22undefined%22%3D%3Dtypeof%20t%2Elimit%26%26%28t%2Elimit%3D%221%22%29%2C%22undefined%22%21%3Dtypeof%20t%2Erandom%26%26%28t%2Erandom%3D%210%29%2Ct%7D%28%29%3B%21function%28%29%7Bvar%20e%3D%5B%22milestone%22%2C%22state%22%2C%22assignee%22%2C%22creator%22%2C%22mentioned%22%2C%22labels%22%2C%22sort%22%2C%22direction%22%2C%22since%22%5D%2Ct%3Dfunction%28t%29%7Breturn%2D1%21%3D%3De%2EindexOf%28t%29%7D%2Cn%3DObject%2Ekeys%28params%29%2Efilter%28t%29%2Emap%28function%28e%29%7Breturn%20e%2B%22%3D%22%2Bparams%5Be%5D%7D%29%2Ca%3D%22https%3A%2F%2Fapi%2Egithub%2Ecom%2Frepos%2F%22%2Bparams%2Eowner%2B%22%2F%22%2Bparams%2Erepo%2B%22%2Fissues%3F%22%2Bn%2Ejoin%28%22%26%22%29%3BloadJSONP%28a%2C%22APICallback%22%29%7D%28%29%3B%3C%2Fscript%3E%3Cstyle%3Ebody%7Boverflow%3Ahidden%3Bbackground%2Dcolor%3Atransparent%7Dbody%2Cul%7Bpadding%3A0%3Bmargin%3A0%7Dul%7Blist%2Dstyle%3Anone%3Bline%2Dheight%3A2%7Dli%7Bbackground%2Dimage%3Aurl%28%27data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAYAAAAAwr0iAAABfElEQVRIic1X242EMAwc2zRADdRBGTRBDfmnEnqgj22CCvhC2vu4GDk%2BdglcVuxIEUg4yXj8SADeo4rjyKY4%2FKIVgAZAa0b9KSLbQiLSMfNIRLOIPO1g5oWIHgBCJFeUSEtED7fh6of7NpQiEayXdqO9wcyLvkdFVI1TJCoAYObBeLTou4hMAHrE%2BMfQDFYlY7%2BcJaFGvfeamUf8jW%2ByqIh0miNKgojmswo0Np4i8oweWwSTfDPSKqhVDaPE6Bx8DRGZ7GT8ZnbisYbHyFwbGyUxOyfaHBKNnRTjbSfpM5hk8wqoTXtFheC896xzCGx2quYbuxRuwmPH5CyB7sChFK6U9iTLJaBoXB5oMu8TcGU37BgnBJh5PSBQ2%2BaENKGvE3BVsBYjYA%2BagxD0MVxTrJQyIchIwlxcS0Icl6GiZeYhhinsfL9WhshsRDYHItFijSirFeN1Gf67FW8q3HUYfcVxfOuFxOOWK1miBG6%2BlH7FtfzWHxO%2F6Ed%2FzX4A3XEYsUuQztIAAAAASUVORK5CYII%3D%27%29%3Bbackground%2Drepeat%3Ano%2Drepeat%3Bbackground%2Dposition%3Aleft%20top%3Bpadding%2Dleft%3A32px%7D%3C%2Fstyle%3E%3C%2Fhead%3E%3Cbody%3E%3Cdiv%20id%3D%22js%2Dmain%2Dcontent%22%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E" allowtransparency="true" frameborder="0" scrolling="0" width="100%">
+</iframe>
+<p>この他にも，お気づきの点がある読者は是非issueに上げて頂けると幸いです．</p>
+<p>ちなみに上のissue widgetはazuさんの以下のサービスを利用した．</p>
+<p><strong><a href="https://github.com/azu/github-issue-widget">azu/github-issue-widget: Showcase your Github(repository)’s issue list via iframe.</a></strong></p>
+</body>
+  <div style="text-align: center;">
+        <a href="20200505.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20200507.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>

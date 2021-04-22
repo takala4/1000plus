@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20200203</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20200203</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>02/06の修論最終発表に向けて，発表スライドを黙々と作っている． が，自分のペースが遅すぎてイライラする．根本的には，見積もり通りに進まないので焦ってイライラする．</p>
+<p>今回については完全に作業見積もりを見誤った感が否めない．</p>
+<p>自戒を込めて，「おまえはスライド作るのに，こんだけかかるんやで」という目安をまとめておく．</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Task</th>
+<th style="text-align: center;">Min/1p</th>
+<th style="text-align: center;">Min</th>
+<th style="text-align: center;">20p</th>
+<th style="text-align: center;">20p-Cumsum</th>
+<th style="text-align: left;">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">アウトライン作成</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">180m</td>
+<td style="text-align: center;">180m</td>
+<td style="text-align: center;">180m=3h</td>
+<td style="text-align: left;">しゃーない</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">ファイル作成</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">120m</td>
+<td style="text-align: center;">120m</td>
+<td style="text-align: center;">300m=5h</td>
+<td style="text-align: left;">いい加減最強のスライドフォーマット決めたい</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">タイトル埋め</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">30h</td>
+<td style="text-align: center;">30m</td>
+<td style="text-align: center;">330m=5.5h</td>
+<td style="text-align: left;">こんなもん</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">アウトライン流し込み</td>
+<td style="text-align: center;">5m</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">100m</td>
+<td style="text-align: center;">430m=7h</td>
+<td style="text-align: left;">20ページ=3ポモという感覚から逆算</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">スライド1段階</td>
+<td style="text-align: center;">30m</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">600m</td>
+<td style="text-align: center;">1030m=17h</td>
+<td style="text-align: left;">平均するとこのくらい</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">スクリプト箇条書き</td>
+<td style="text-align: center;">15m</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">300m</td>
+<td style="text-align: center;">1330m=22h</td>
+<td style="text-align: left;">うん</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">スライド2段階</td>
+<td style="text-align: center;">30m</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">600m</td>
+<td style="text-align: center;">1930m=32h</td>
+<td style="text-align: left;">調整</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">発表練習</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">300m</td>
+<td style="text-align: center;">300m</td>
+<td style="text-align: center;">2230m=37h</td>
+<td style="text-align: left;">絶対に10回は通しで喋る</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">合計</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">2230m=37h</td>
+<td style="text-align: center;">2230m=37h</td>
+<td style="text-align: left;">X</td>
+</tr>
+</tbody>
+</table>
+<p>ということで，20ページ目安だとだいたい最低限40時間は掛かる．</p>
+<p>現在，スクリプト箇条書きまで終わって40PMD = 20時間． 上の見積もり表とおおよそ一致している．</p>
+<p>あ－．．．はやく綺麗なスライド作れるようになりたい．．．</p>
+</body>
+  <div style="text-align: center;">
+        <a href="20200202.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20200204.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>

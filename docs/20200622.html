@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20200622</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20200622</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>G.ポリアの「いかにして問題をとくか」（原題：How to Solve It）を読んでいる． 数学の問題への挑み方を説いた古典的名著として名高く，1954年に邦訳されてから今に至るまで出版され続けている．</p>
+<p><strong><a href="https://www.amazon.co.jp/dp/4621045938">いかにして問題をとくか | G. ポリア, Polya, G., 賢信, 柿内 |本 | 通販 | Amazon</a></strong></p>
+<p>今年のテーマがSolveである私にとっては胸に刻みたい内容が多い．（毎年のテーマについては：<strong><a href="20191231.html">1000plus – 2019年12月31日</a></strong>）</p>
+<p>まだ読み途中ではあるが，本書の最重要項目である「リスト」を引用する． この「リスト」は，数学的な問題への挑み方のフレームワークを与えるもので，金言と言っても差し支えない．</p>
+<blockquote>
+<h2 id="g.ポリアいかにして問題をとくか">G.ポリア「いかにして問題をとくか」</h2>
+<h3 id="問題を理解すること">問題を理解すること</h3>
+<ul>
+<li><p>未知のものは何か．与えられているもの（データ）は何か．条件は何か．</p></li>
+<li><p>条件を満足させうるか．条件は未知のものを定めるのに十分であるか．又は不十分であるぁ．又は余剰であるか．又は矛盾しているか．</p></li>
+<li><p>図をかけ．適当な記号を導入せよ．</p></li>
+<li><p>条件の各部を分離せよ．それをかき表すことができるか．</p></li>
+</ul>
+<h3 id="計画をたてること">計画をたてること</h3>
+<ul>
+<li><p>前にそれをみたことがないか．又は同じ問題を少しちがった形でみたことがあるか．</p></li>
+<li><p>似た問題を知っているか．役に立つ定理を知っているか．</p></li>
+<li><p>未知のものをよくみよ！そうして未知のものが同じか又はよく似ている，みなれた問題を思い起せ．</p></li>
+<li><p>似た問題ですでにといたことのある問題がここにある．それを使うことができないか．その結果を使うこどができないか．その方法を使うことができないか．それを利用するためには，なにか補助的な要素を導入すべきでないか．</p></li>
+<li><p>問題をいいかえることができるか．それをちがったいい方をすることができないか．定義にかえれ．</p></li>
+<li><p>もしも与えられた問題がとけなかったならば，何かこれと関連した問題をとこうとせよ．もっと優しくてこれと似た問題は考えられないか．もっと一般的な問題は？ もっと特殊な問題は？類推的な問題は？問題の一部分をとくことができるか．条件の一部をのこし，他をすてよ．そうすればどの程度まで未知のものが定まり，どの範囲で変りうるか． データを役立たせうるか．未知のものを定めるのに適当な他のデータを考えることができるか．未知のもの若しくはデータ，あるいは必要ならば，その両方をかえることができるか． そうして新しい未知のものと，新しいデータとが，もっと互いに近くなるようにできないか．</p></li>
+<li><p>データをすべてつかったか．条件のすべてをつかったか．問題に含まれる本質的概念はすべて考慮したか．</p></li>
+</ul>
+<h3 id="計画を実行すること">計画を実行すること</h3>
+<ul>
+<li>解答の計画を実行するときに，各段階を検討せよ．その段階が正しいことをはっきりとみとめられるか．</li>
+</ul>
+<h3 id="ふり返ってみること">ふり返ってみること</h3>
+<ul>
+<li><p>結果をためすことができるか．議論をためすことができるか．</p></li>
+<li><p>結果をちがった仕方でみちびくことができるか．それを一目のうちに捉えることができるか．</p></li>
+<li><p>他の問題にその結果や方法を応用することができるか．</p></li>
+</ul>
+</blockquote>
+<p>以上．リストといいながら，淡泊とは言い難く量質ともにボリュームがある． 今の私には <strong>「結果をちがった仕方でみちびくことができるか．それを一目のうちに捉えることができるか．」</strong> が一番刺さった．</p>
+<p>余談だが，私は「刺さった」という表現を多用してしまう傾向にある． 貧弱な語彙力のため，印象に残る/胸に刻みたい/腑に落ちる，などの心理をまとめて「刺さった」で表現してしまう． なんでもかんでも「エモい」と言っているのと変わらないので，「刺さった」に変わる粋な表現を身に着けたい．</p>
+</body>
+  <div style="text-align: center;">
+        <a href="20200621.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20200623.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>

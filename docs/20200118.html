@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20200118</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20200118</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>文書（報告書とか論文とか）を完成させるスピードは，第0稿をいかにはやく形にするかにかかっている．ここで言う第0稿とは，箇条書きレベルのアウトラインよりも踏み込んで， 少なくとも見てくれは完成形と同じものをさす．</p>
+<p>第0稿さえ仕上がれば， その後の推敲や修正はストレスがかかるものの， その作業自体は文書を組み立てている実感があり絶望的な焦りは少ない．そして，一応形になっている第0稿はまわりからの 批評の叩き台としての役割を十分果たす．</p>
+<p>そのため，アウトラインが仕上がった後， どれだけはやく文章を書き第0稿をアップできるかが， 最終的な完成スピードに大きく影響する．</p>
+<p>しかしながら，えてして第0稿の筆は進まない． この原因は，箇条書きレベルのアウトラインと違い， 文章の言い回しやつながりなどを過剰に気にして 組み立て作業と推敲作業を 同時に頭の中で行ってしまっているからだ．</p>
+<p>第0稿は見てくれは完成形と同じであるべきだが， 必ずしも完成品としての質を目指す必要はない． たたき台をまず出すことを優先するという意識づけが必要だ．</p>
+<p>そこで，自分なりに第0稿が 最低限担保すべき質についてまとめてみた． というより，私が日々意識していることである．</p>
+<ul>
+<li>完成品と同じ文書フォーマットである</li>
+<li>題名がある</li>
+<li>章題および目次がある</li>
+<li>挿入図表がある</li>
+<li>規定枚数以上の分量がある</li>
+<li>少なくとも1文1文の文法は正しい</li>
+<li>パラグラフの先頭の1文だけを読み続けてストーリーは伝わる</li>
+</ul>
+<p>「ある」という表現は， 修正や変更を頭の中では前提としているけれども， たたき台の時点で自分で決めた題目や構成が文書に 存在しているということを意味している． アウトラインの時点では， 「候補」という形で複数列挙しても良いが， 第0稿では，直す（or直される）とわかっていても， その時点で自分が最適だと思う構成で見てくれだけは満足させること必要だ．</p>
+<p>また，パラグラフレベルのつながりは多少意識するべきだが， パラグラフ内の論理展開は，気にしすぎると全く進まなくなるので，その質についてはある程度割り切ってもよいだろう．</p>
+<p>第0稿に限らないが，文書を完成させようと思ったら， とにかく書くこと． つらいけど書き進めること． 書けば救われる．</p>
+</body>
+  <div style="text-align: center;">
+        <a href="20200117.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20200119.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>

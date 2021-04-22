@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20200414</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="data:application/javascript;base64,dmFyIGZpbGVyZWY9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0JykNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJ0eXBlIiwidGV4dC9qYXZhc2NyaXB0IikNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJzcmMiLCAiaHR0cDovL2Nkbi5tYXRoamF4Lm9yZy9tYXRoamF4L2xhdGVzdC9NYXRoSmF4LmpzP2NvbmZpZz1UZVgtQU1TLU1NTF9IVE1Mb3JNTUwiKQ0KZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoImhlYWQiKVswXS5hcHBlbmRDaGlsZChmaWxlcmVmKQ==" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20200414</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>離散型のSIRモデルを紹介する．</p>
+<h2 id="記号の定義">記号の定義</h2>
+<ul>
+<li><span class="math inline">\(S(t)\)</span> : 時点<span class="math inline">\(t\)</span>における未感染者数</li>
+<li><span class="math inline">\(I(t)\)</span> : 時点<span class="math inline">\(t\)</span>における感染者数</li>
+<li><span class="math inline">\(R(t)\)</span> : 時点<span class="math inline">\(t\)</span>における感染済かつ回復者数（免疫保持者数）</li>
+<li><span class="math inline">\(S(t)+I(t)+R(t) \equiv N(t)=N\)</span> :総人口（死亡者数を含め保存されるものとする）</li>
+<li><span class="math inline">\(\beta\)</span> : 未感染者が感染者と1回の接触で感染する確率</li>
+<li><span class="math inline">\(\gamma\)</span> : 感染者が1日の内に回復し感染力を失う確率</li>
+</ul>
+<p>ここで，感染率<span class="math inline">\(\beta\)</span>は人々の接触時間に依存しないものとする．</p>
+<p>(※)便宜的に各パラメータを定義する際，時間軸の単位を日としている</p>
+<h2 id="感染ダイナミクス">感染ダイナミクス</h2>
+<p>差分方程式を用いて感染ダイナミクスを表現する．</p>
+<p>時点<span class="math inline">\(t\)</span>において，未感染者1人がのべ<span class="math inline">\(j\)</span>人と接触したときに，感染から<strong>免れる確率</strong>は以下で与えられる：</p>
+<p><span class="math display">\[
+\left( 1 - \frac{\beta I(t)}{N} \right)^{j} 
+\]</span></p>
+<p>ここで，ある1人が1日にのべ<span class="math inline">\(j\)</span>人と接触する確率を<span class="math inline">\(P(j)\)</span>と定義すると，時点<span class="math inline">\(t\)</span>から時点<span class="math inline">\(t+1\)</span>の間に増加する感染者数の期待値は次のように書ける： <span class="math display">\[
+S(t+1)-S(t) = 
+S(t) \times
+\sum^{\infty}_{j=0}
+\left[1-
+\left( 1 - \frac{\beta I(t)}{N} \right)^{m}
+\right]P(m)
+\]</span></p>
+<p>この感染者数の増分期待値および回復率<span class="math inline">\(\gamma\)</span>を用いて，SIRダイナミクスは 次の差分方程式で表される：</p>
+<p><span class="math display">\[
+  S(t+1) = S(t) -
+  S(t)
+  \sum^{\infty}_{j=0}
+  \left[1-
+  \left( 1 - \frac{\beta I(t)}{N} \right)^{j}
+  \right]P(j)
+\]</span></p>
+<p><span class="math display">\[
+  I(t+1) =   I(t) + S(t)
+  \sum^{\infty}_{j=0}
+  \left[1-
+  \left( 1 - \frac{\beta I(t)}{N} \right)^{j}
+  \right]P(j)　- \gamma I(t)
+\]</span></p>
+<p><span class="math display">\[
+  R(t+1) = R(t) + \gamma I(t)
+\]</span></p>
+<p>ここで，人口に対する各群の比率<span class="math inline">\(\widehat{S}(t) \equiv \dfrac{S(t)}{N} ,\widehat{I}(t) \equiv \dfrac{I(t)}{N} ,\widehat{R}(t) \equiv \dfrac{R(t)}{N}\)</span>を導入すれば，先の差分方程式は以下に帰着する：</p>
+<p><span class="math display">\[
+  \widehat{S}(t+1) = \widehat{S}(t) -
+  \widehat{S}(t)
+  \sum^{\infty}_{j=0}
+  \left[1-
+  \left( 1 - \beta \widehat{I}(t) \right)^{j}
+  \right]P(j)
+\]</span></p>
+<p><span class="math display">\[
+  \widehat{I}(t+1) =   \widehat{I}(t) + 
+  \widehat{S}(t)
+  \sum^{\infty}_{j=0}
+  \left[1-
+  \left( 1 - \beta \widehat{I}(t) \right)^{j}
+  \right]P(j) -  \gamma \widehat{I}(t)
+\]</span></p>
+<p><span class="math display">\[
+  \widehat{R}(t+1) = \widehat{R}(t) + \gamma \widehat{I}(t)
+\]</span></p>
+<blockquote>
+<p>補足：<span class="math inline">\(P(j)\)</span>が期待値<span class="math inline">\(\lambda\)</span>のポアソン分布<span class="math inline">\(P(j)=\lambda^{j}\mathrm{e}^{-\lambda}/j!\)</span>であるとき，時間ステップ長の極限<span class="math inline">\(\Delta t \rightarrow 0\)</span>において，次に示す連続時間型SIRモデルと対応する．</p>
+<p><span class="math display">\[
+\dfrac{\mathrm{d} \widehat{S}(t)}{\mathrm{d}t} = - 
+\lambda \beta \widehat{S}(t) \widehat{I}(t)
+\]</span></p>
+<p><span class="math display">\[
+\dfrac{\mathrm{d} \widehat{I}(t)}{\mathrm{d}t} =
+\lambda \beta \widehat{S}(t) \widehat{I}(t) - \gamma \widehat{I}(t)
+\]</span></p>
+<p><span class="math display">\[
+\dfrac{\mathrm{d} \widehat{R}(t)}{\mathrm{d}t} =
+\gamma \widehat{I}(t)
+\]</span></p>
+<p>多くの連続時間モデルでは，<span class="math inline">\(\lambda \beta\)</span>を感染率と定義しているケースが多い．このときの感染率は，ウイルス固有の値でなく人々の接触の仕方の情報（ポアソン分布）も含まれている．連続モデルと離散モデルの対応の詳細は<a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/171302/1/1757-07.pdf">瀬野,2011</a>を参照した．</p>
+</blockquote>
+</body>
+  <div style="text-align: center;">
+        <a href="20200413.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20200415.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>

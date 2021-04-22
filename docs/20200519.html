@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20200519</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="data:application/javascript;base64,dmFyIGZpbGVyZWY9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0JykNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJ0eXBlIiwidGV4dC9qYXZhc2NyaXB0IikNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJzcmMiLCAiaHR0cDovL2Nkbi5tYXRoamF4Lm9yZy9tYXRoamF4L2xhdGVzdC9NYXRoSmF4LmpzP2NvbmZpZz1UZVgtQU1TLU1NTF9IVE1Mb3JNTUwiKQ0KZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoImhlYWQiKVswXS5hcHBlbmRDaGlsZChmaWxlcmVmKQ==" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20200519</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<h2 id="常微分方程式の初期値問題の数値解法">常微分方程式の初期値問題の数値解法</h2>
+<p>新型コロナウイルスに関連して一躍知名度をあげたSIRモデル． このSIRモデルは，数学的に常微分方程式の初期値問題というクラスに分類され， その一般的な表現は次のようになる： <span class="math display">\[
+\begin{align}
+  &amp;\dfrac{\mathrm{d} \boldsymbol{x}(t)}{\mathrm{d} t} = \boldsymbol{F}(t,\boldsymbol{x}(t))
+  \\
+  &amp;\boldsymbol{x}(0) = \boldsymbol{x}_0
+\end{align}
+\]</span> つまり， ベクトル関数<span class="math inline">\(\boldsymbol{F}\)</span>，初期値<span class="math inline">\(\boldsymbol{x}_{0}\)</span>が与えられたときに， 関数<span class="math inline">\(\boldsymbol{x}(t)\)</span>を求める問題となる． このような常微分方程式の初期値問題に関しては， 解の存在や一意性などの基本的なことは十分に分かっていると言って良い． しかしながら， その解析解については， 特殊な<span class="math inline">\(\boldsymbol{F}\)</span>の形状においてのみ求解可能であることが知られている．</p>
+<p>常微分方程式の初期値問題に対する代表的数値計算アルゴリズムである Euler法，Heun法，Runge-Kutta法の基本形は 次のように表される： <span class="math display">\[
+\begin{align}
+  &amp;\boldsymbol{x}(0) = \boldsymbol{x}_{0}
+  \\
+  &amp;\boldsymbol{x}(t+1) = \boldsymbol{x}(t) + h \boldsymbol{F}(t,\boldsymbol{x}(t))
+\end{align}
+\]</span> ここで<span class="math inline">\(h\)</span>は微小時間刻み幅である． <span class="math inline">\(\boldsymbol{F}(\cdot)\)</span>の選び方により，各種解法が得られる．</p>
+<h2 id="euler法">Euler法</h2>
+<p>Euler(オイラー)法は最も基本的な方法で，<span class="math inline">\(\boldsymbol{F}\)</span>を次のように<span class="math inline">\(\boldsymbol{F}\)</span>自身に選ぶ． つまり，局所的な線形近似によって，次の時点<span class="math inline">\(t+1\)</span>の解を定める： <span class="math display">\[
+\begin{align}
+ \boldsymbol{F}(\boldsymbol{x}(t),t) = \boldsymbol{F}(t,\boldsymbol{x}(t))
+\end{align}
+\]</span></p>
+<h2 id="heun法">Heun法</h2>
+<p>Heun(ホイン)法は次のように， Euler法で予測された時点における<span class="math inline">\(\boldsymbol{F}(\cdot)\)</span> の情報を含むように，<span class="math inline">\(\boldsymbol{F}\)</span>を定める： <span class="math display">\[
+\begin{align}
+  &amp;\boldsymbol{k}_{1} = \boldsymbol{F}(t,\boldsymbol{x}(t))
+  \\
+  &amp;\boldsymbol{k}_{2} = \boldsymbol{F}(t+h, \boldsymbol{x}+h\boldsymbol{k}_{1})
+  \\
+  &amp;\boldsymbol{F}(\boldsymbol{x}(t),t) = \dfrac{1}{2} \left( \boldsymbol{k}_{1} + \boldsymbol{k}_{2} \right)
+\end{align}
+\]</span></p>
+<h2 id="runge-kutta法">Runge-Kutta法</h2>
+<p>Runge-Kutta(ルンゲクッタ)法は， そこそこの効率を持つ方法であるため，常微分方程式の初期値 問題の「定番の数値解法」としての地位を得ている． 「まずは Runge-Kutta 法でやってみて，それでダメなら考える」 というスタンスでもよいらしい． Runge-Kutta(ルンゲクッタ)法における<span class="math inline">\(\boldsymbol{F}\)</span>を次のように 4点の情報を用いて定められる： <span class="math display">\[\begin{align}
+  &amp;\boldsymbol{k}_{1} = \boldsymbol{F}\left(t,\boldsymbol{x}(t)\right)
+  \\
+  &amp;\boldsymbol{k}_{2} = \boldsymbol{F}\left(t+\dfrac{h}{2}, \boldsymbol{x}+\dfrac{h}{2}\boldsymbol{k}_{1}\right)
+  \\
+  &amp;\boldsymbol{k}_{3} = \boldsymbol{F}\left(t+\dfrac{h}{2}, \boldsymbol{x}+\dfrac{h}{2}\boldsymbol{k}_{2}\right)
+  \\
+  &amp;\boldsymbol{k}_{4} =  \boldsymbol{F}\left(t+h, \boldsymbol{x}+h\boldsymbol{k}_{3}\right)
+  \\
+  &amp;\boldsymbol{F}(\boldsymbol{x}(t),t) = \dfrac{1}{6}
+  \left( \boldsymbol{k}_{1} + 2\boldsymbol{k}_{2} + 2\boldsymbol{k}_{3} + \boldsymbol{k}_{4} \right)
+\end{align}\]</span></p>
+<p><br> <br></p>
+<p>久しぶりに真面目なことを書いたが，実は過去レポのコピペ．．． 元のSIRモデルに対して数値実験を行ったコードとレポートをGitHubに置いている． こちらには，参考文献なども記載している．</p>
+<p><strong><a href="https://github.com/takala4/takala-bako/blob/master/SIR/report.pdf">takala-bako/report.pdf at master · takala4/takala-bako</a></strong></p>
+</body>
+  <div style="text-align: center;">
+        <a href="20200518.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20200520.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>
