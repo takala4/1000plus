@@ -561,3 +561,4 @@ header-includes:
 * Daydays:= [title: =filename.html) 
 * Day 528 : [20210607](.\20210607.html) 
 * Day 529 : [20210608](.\20210608.html) 
+* Day 530 : [20210609](.\20210609.html) 
