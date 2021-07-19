@@ -600,3 +600,8 @@ header-includes:
 * Day 566 : [20210715](.\20210715.html) 
 * Day 567 : [20210716](.\20210716.html) 
 * Day 568 : [20210717](.\20210717.html) 
+* Daydays:= [title: =filename.html) 
+* Daydays:= [title: =filename.html) 
+* Daydays:= [title: =filename.html) 
+* Day 569 : [20210718](.\20210718.html) 
+* Day 569 : [20210718](.\20210719.html) 
