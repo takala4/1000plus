@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20210827</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="data:application/javascript;base64,dmFyIGZpbGVyZWY9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0JykNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJ0eXBlIiwidGV4dC9qYXZhc2NyaXB0IikNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJzcmMiLCAiaHR0cHM6Ly9jZG4ubWF0aGpheC5vcmcvbWF0aGpheC9sYXRlc3QvTWF0aEpheC5qcz9jb25maWc9VGVYLUFNUy1NTUxfSFRNTG9yTU1MIikNCmRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCJoZWFkIilbMF0uYXBwZW5kQ2hpbGQoZmlsZXJlZik=" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+
+<!-- web公開用 -->
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20210827</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>最適停止問題と線形相補性問題の関連をCottleのp.10を参考にまとめる．</p>
+<p>有限の状態空間<span class="math inline">\(E = \{1,2,...,N \}\)</span>と遷移確率行列<span class="math inline">\(P\)</span>を持つマルコフ連鎖を考える．このマルコフ連鎖はいくらでも繰り返すことができる．</p>
+<p>各時刻<span class="math inline">\(t \in \{0,1,2,...,T \}\)</span>では，このマルコフ連鎖に従うプロセスを停止するか継続するかを選択することができる． 時刻<span class="math inline">\(t\)</span>に停止を選択した場合は，状態<span class="math inline">\(i\)</span>の利得<span class="math inline">\(r_{i}\)</span>に 割引率<span class="math inline">\(\alpha \in (0, 1)\)</span>を考慮した<span class="math inline">\(\alpha^{t}r_{i}\)</span>を獲得してゲームは終了する． 継続を選択した場合は，遷移確率行列<span class="math inline">\(P\)</span>に従って，次の状態に進む．</p>
+<p><span class="math inline">\(r_{i}\)</span>を<span class="math inline">\(i \in E\)</span>についてベクトル化したものを<span class="math inline">\(r\)</span>とする．</p>
+<p>時刻<span class="math inline">\(t\)</span>における暫定的な利得は<span class="math inline">\(\alpha^{t} r\)</span>と計算できる． さらに，この暫定的な利得と遷移確率行列<span class="math inline">\(P\)</span>から，時刻<span class="math inline">\(t+1\)</span>に おける割引期待利得を計算すると<span class="math inline">\(\alpha P(\alpha^{t} r)\)</span>を得る．</p>
+<p>問題は，今の状態で停止したときに得られる利得<span class="math inline">\(\alpha^{t} r\)</span>と， 継続したときの割引率を考慮した期待利得<span class="math inline">\(\alpha P(\alpha^{t} r)\)</span>とのトレードオフを考えて最適停止時刻を決定することである．</p>
+<p>つまり各時刻<span class="math inline">\(t\)</span>において次の意思決定を行うことになる： <span class="math display">\[\begin{align}
+ \begin{cases}
+   \mbox{Stop} \quad &amp;\mbox{if} \quad \alpha P(\alpha^{t} r) \leq \alpha^{t} r
+   \\
+   \mbox{Continue} \quad &amp;\mbox{if} \quad \alpha P(\alpha^{t} r) &gt; \alpha^{t} r
+ \end{cases}
+\end{align}\]</span></p>
+<p>不等号に影響を与えない<span class="math inline">\(\alpha^{t}\)</span>を無視すると，各時刻では次の比較によって意思決定が行われることになる： <span class="math display">\[\begin{align}
+　\max(\alpha Pr, r)
+\end{align}\]</span></p>
+<p>ここで<span class="math inline">\(v_{i}\)</span>を初期状態<span class="math inline">\(i\)</span>からスタートしたときの(十分長い時間を経たときに到達する)定常状態における期待利得とする (この定常分布は，遷移確率行列<span class="math inline">\(P\)</span>の構造によって初期状態依存になるため，この定常状態における期待利得もまた初期状態依存となることに注意されたい)．<span class="math inline">\(v_{i}\)</span>を<span class="math inline">\(i \in E\)</span>についてベクトル化したものを<span class="math inline">\(v\)</span>とする．</p>
+<p>この定常状態において次の方程式が成立する：</p>
+<p><span class="math display">\[\begin{align}
+  v &amp;= \max \left( \alpha P v ,  r \right)
+  \\
+  \Leftrightarrow \quad
+  v-r &amp;= \max \left( \alpha P v - r,  0 \right)
+\end{align}\]</span></p>
+<p>この方程式は次のように変換できる： <span class="math display">\[\begin{align}
+ v - \alpha P v \geq 0,\quad v - r \geq 0, \quad \mbox{and} \quad \left( v-r \right)^{\mathsf{T}}\left( v-\alpha P v \right) = 0
+\end{align}\]</span></p>
+<p>すなわち<span class="math inline">\(x=v-r\)</span>とすれば，定常状態における期待利得<span class="math inline">\(v\)</span>を求めることは，次のLCP<span class="math inline">\((M,q)\)</span>を解くことと等価である： <span class="math display">\[\begin{align}
+ \mbox{find.} \quad &amp;u \in \mathbb{R}^{N}
+ \\
+ \mbox{such that} \quad 
+ &amp;0 \leq x \perp Mx + q \geq 0
+ \\
+ \mbox{where}
+ \quad &amp;q =  \left( I - \alpha P \right)r
+ \\
+ &amp;M = I - \alpha P
+\end{align}\]</span></p>
+<p>ここで，行列<span class="math inline">\(M\)</span>はその非対角線上のすべての要素が非正であり，かつ<span class="math inline">\(Me &gt; 0\)</span>（<span class="math inline">\(e\)</span>は全要素が1のベクトル）という特性を持つ．</p>
+<p><span class="math inline">\(\alpha \in (0, 1)\)</span>であるため，停止時刻は早ければ早い方がよい． したがってプロセスが停止すべき状態に到達したときに，そこで停止の判断を見送ることはありえない． そのため，最適停止時刻はプロセスが最初に集合<span class="math inline">\(\{ i \in E \mid v_{i} - r_{i} =0 \}\)</span> に到達した瞬間となる．</p>
+</body>
+  <div style="text-align: center;">
+        <a href="20210826.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20210828.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>
