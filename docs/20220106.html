@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20220106</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+
+<!-- web公開用 -->
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20220106</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>私は，通称科研費という研究費を年間100万円ほど頂いている． この科研費は，国民の血税が原資であるので，その活用には透明性と効率性が求められる．</p>
+<p>当たり前であるが，研究に関係のあるものしか購入はできず，私的に使うことは許されない．</p>
+<p>私も注意深く使わせて頂いているが，少し運用に悩む箇所がひとつある． 中古本の購入だ．</p>
+<p>新品の本に比べて，中古本は安価なことが多い． そのため，よほどボロボロでない限り金銭的な面では中古での購入に軍配が上がる．</p>
+<p>一方で，もう少しマクロな視座に立った時，科研費で中古本を買うことは 本当に最適解なのかと考えるようになった．</p>
+<p>具体的には，中古本購入には次の点でデメリットがある気がする．</p>
+<ul>
+<li><p>購入数に影響しない： 研究で使う専門書の多くは専らニッチである．その研究分野の営みを継続させるためには， そのようなニッチな書籍を発行or改訂し続けていく必要がある．書籍の発行or改訂インセンティブが，購入数に 影響するのは当たり前である．わざわざ中古本で購入してしまうのは，もしかしたらその研究分野の衰退に間接的に 寄与してしまうかもしれない．</p></li>
+<li><p>著者の収入に繋がらない： 中古市場での取引だと，前述のようにニッチな専門書を書き上げてくれる著者に金銭的な対価を与えることができない． 研究分野を盛り上げていくには新品を購入することで，著者をある種応援することが大切かもしれない．</p></li>
+<li><p>私費購入する人の購入機会を奪ってしまう： 誰しも科研費を持っているわけではなく，その専門書を私費で購入したい層もいるかもしれない． 新品で購入する余裕のある層が，わざわざ中古本を買ってしまうことで，そのような層の人々の学習機会を 奪ってしまうかもしれない．</p></li>
+<li><p>長持ちしないかもしれない： 中古本は，単純に物理的に寿命が短くなっているであろう．科研費で購入した場合，基本的には研究室のものとなるので， みんなで大切に読んでいくことになる．最初から綺麗である方が長持ちするというのは事実だ．</p></li>
+</ul>
+<p>いや安く買えるなら安く買えよという考え方もあるが， 本来科学のために使われるべきお金であるので， 研究分野を持続可能に発展させていくために効果的に使うという視点にも正当性はある．</p>
+<p>最近このようなことを考えて，専門書の購入のあり方を模索している．</p>
+</body>
+  <div style="text-align: center;">
+        <a href="20220105.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20220107.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>
