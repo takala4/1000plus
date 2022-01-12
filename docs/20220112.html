@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20220112</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+
+<!-- web公開用 -->
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20220112</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>読んだ：</p>
+<p><strong><a href="https://www.nikkei.com/article/DGXZQOUE0622K0W2A100C2000000/">「公平な分配、数学で導く」国立情報学研助教・五十嵐氏: 日本経済新聞</a></strong></p>
+<p>有料会員限定の記事だが，内容は</p>
+<blockquote>
+<p>限られた資源をうまく分配しなければ，妬みや不満が膨らむ．問題を解くためのアルゴリズム（算法）は不公平感を解消し，適切な分配を導けるのか．数学の理論で公平性について研究する国立情報学研究所の五十嵐歩美助教に課題や実情を聞いた．</p>
+</blockquote>
+<p>というものだ．</p>
+<p>五十嵐先生は分野外の私でも何度か耳にした目にしたことがある新進気鋭の研究者：</p>
+<p><strong><a href="https://sites.google.com/site/eigarashayumi/japanese">Ayumi Igarashi - Japanese</a></strong></p>
+<p>オックスフォード大学計算機科学科でPh.Dを取得している．かっこいい．</p>
+<p>研究内容の「公平な分配」は，まさに現代社会で課題となっているテーマである． 中身があるかどうかは別にして新しい資本主義というコンセプトの中で， 再分配というキーワードはよく登場する． この再分配という概念ははるか昔から登場するものの，社会学的な文脈で語られることが多く 数学的な裏付けを伴った政策立案にはほど遠かった印象がある．</p>
+<p>それがマッチングやオークション理論の発展に伴って，数学・計算機科学の一テーマとして 確立されてきている気がする．今後もより注目されていく分野であろう．</p>
+<p>交通の分野で，ある種の再分配に関連する概念として 「混雑料金収入は利用者に還元されるため社会的損失とならない」 というものがある．</p>
+<p>一見もっともらしいのだが個人的には以下の2点でこの 主張に疑問を持っている．</p>
+<p>1つ目は利用者への還元までの時間が長すぎる点である． よく，料金収入は道路容量の拡張などに使われるため利用者にとって損失ではないと 説明されるが，その瞬間に支払う費用とあまりにも時間軸が違いすぎる．</p>
+<p>2つ目は，まさに公平な再分配に関する疑問である． 動的な混雑料金課金をした場合，各利用者の支払う料金は時間帯によって異なる． 一方で，その料金収入を用いて道路容量の拡張を図った場合， その便益はすべての利用者が等しく被る． これは公平なのだろうか．</p>
+<p>「長期的に見て損失にならない」という説明はかなりご都合主義な気がしてならない． 1日の中で公平性・効率性の勘定が（なるべく）完結するようなシステムがベストだと考える．</p>
+</body>
+  <div style="text-align: center;">
+        <a href="20220111.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20220113.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>
