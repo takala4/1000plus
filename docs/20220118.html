@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20220118</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="data:application/javascript;base64,dmFyIGZpbGVyZWY9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0JykNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJ0eXBlIiwidGV4dC9qYXZhc2NyaXB0IikNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJzcmMiLCAiaHR0cHM6Ly9jZG4ubWF0aGpheC5vcmcvbWF0aGpheC9sYXRlc3QvTWF0aEpheC5qcz9jb25maWc9VGVYLUFNUy1NTUxfSFRNTG9yTU1MIikNCmRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCJoZWFkIilbMF0uYXBwZW5kQ2hpbGQoZmlsZXJlZik=" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+
+<!-- web公開用 -->
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20220118</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>包絡線定理について．</p>
+最適化問題： <span class="math display">\[\begin{align}
+  \max_{\boldsymbol{x}} \qquad &amp; f(\boldsymbol{x}, \boldsymbol{a})
+  \\
+  \mbox{s.t} \qquad &amp; \boldsymbol{g} (\boldsymbol{x}, \boldsymbol{a} )\geq \boldsymbol{0}
+\end{align}\]</span> を考える． ここで<span class="math inline">\(\boldsymbol{x} \in \mathbb{R}^{N}\)</span>と<span class="math inline">\(\boldsymbol{a} \in \mathbb{R}^{M}\)</span> は，それぞれ決定変数ベクトルとパラメータベクトルである．
+<p>この問題の最適解を<span class="math inline">\(\boldsymbol{x}^{\ast} = \boldsymbol{x}(\boldsymbol{a})\)</span>とし， 最適値関数<span class="math inline">\(M(\boldsymbol{a}) \equiv f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})\)</span>を定義する． ラグラジアンを次のようにおく： <span class="math display">\[\begin{align}
+  L(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{\lambda}, \boldsymbol{a}) =
+  f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a}) + \boldsymbol{\lambda}^{\mathsf{T}} \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})
+\end{align}\]</span> ラグラジアンを偏微分することによって得られる 1階の最適性条件を次に示す： <span class="math display">\[\begin{align}
+  &amp;\dfrac{\partial L(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{\lambda}, \boldsymbol{a})}{\partial \boldsymbol{x}}
+  = \dfrac{\partial f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{x}}
+  + \boldsymbol{\lambda}^{\mathsf{T}}
+  \dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{x}}
+  = \boldsymbol{0}
+  \\
+  &amp;\dfrac{\partial L(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{\lambda}, \boldsymbol{a})}{\partial \boldsymbol{\lambda}}
+  = \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a}) = \boldsymbol{0}
+\end{align}\]</span> 最適値関数<span class="math inline">\(M(\boldsymbol{a})\)</span>をパラメータ<span class="math inline">\(\boldsymbol{a}\)</span>で微分する： <span class="math display">\[\begin{align}
+  \dfrac{\partial M(\boldsymbol{a})}{\partial \boldsymbol{a}}
+  =
+  \dfrac{\partial f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{x}} \cdot
+  \dfrac{\partial \boldsymbol{x}}{\partial \boldsymbol{a}}
+  +
+  \dfrac{\partial f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{a}}
+\end{align}\]</span> 最適性条件より <span class="math display">\[\begin{align}
+  \dfrac{\partial L(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{\lambda}, \boldsymbol{a})}{\partial \boldsymbol{x}}
+ = -
+  \boldsymbol{\lambda}^{\mathsf{T}}
+  \dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{x}}
+\end{align}\]</span> であるので， <span class="math display">\[\begin{align}
+  \dfrac{\partial M(\boldsymbol{a})}{\partial \boldsymbol{a}}
+  =
+  - \boldsymbol{\lambda}^{\mathsf{T}}
+  \dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{x}} \cdot
+  \dfrac{\partial \boldsymbol{x}}{\partial \boldsymbol{a}}
+  +
+  \dfrac{\partial f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{a}}
+\end{align}\]</span> を得る． また，最適性条件<span class="math inline">\(\boldsymbol{g}(\boldsymbol{x}, \boldsymbol{a}) = \boldsymbol{0}\)</span>の両辺を<span class="math inline">\(\boldsymbol{a}\)</span> で微分すると以下を得る： <span class="math display">\[\begin{align}
+  &amp;\boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a}) = \boldsymbol{0}
+  \\
+  \Rightarrow \qquad
+  &amp;\dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{x}}
+  \cdot
+  \dfrac{\partial \boldsymbol{x}(\boldsymbol{a})}{\partial \boldsymbol{a}}
+  + \dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{a}}
+  = \boldsymbol{0}
+  \\
+  \Rightarrow \qquad
+  &amp;
+  \dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{x}}
+  \cdot
+  \dfrac{\partial \boldsymbol{x}(\boldsymbol{a})}{\partial \boldsymbol{a}}
+  = - \dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{a}}
+\end{align}\]</span> これより， <span class="math display">\[\begin{align}
+  \dfrac{\partial M(\boldsymbol{a})}{\partial \boldsymbol{a}}
+  = \boldsymbol{\lambda}^{\mathsf{T}} \dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{a}}
+  + \dfrac{\partial f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{a}}
+\end{align}\]</span> となる． さらに，ラグラジアン<span class="math inline">\(L(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{\lambda}, \boldsymbol{a})\)</span>を <span class="math inline">\(\boldsymbol{a}\)</span>で微分する： <span class="math display">\[\begin{align}
+  &amp;L(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{\lambda}, \boldsymbol{a}) =
+  f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a}) + \boldsymbol{\lambda}^{\mathsf{T}} \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})
+  \\
+  \Rightarrow \qquad
+  &amp;
+  \dfrac{\partial L(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{\lambda}, \boldsymbol{a})}{\partial \boldsymbol{a}}
+  = \boldsymbol{\lambda}^{\mathsf{T}} \dfrac{\partial \boldsymbol{g}(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{a}}
+  + \dfrac{\partial f(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{a})}{\partial \boldsymbol{a}}
+\end{align}\]</span> これより， <span class="math display">\[\begin{align}
+  \dfrac{\partial M(\boldsymbol{a})}{\partial \boldsymbol{a}}
+  = \dfrac{\partial L(\boldsymbol{x}(\boldsymbol{a}), \boldsymbol{\lambda}, \boldsymbol{a})}{\partial \boldsymbol{a}}
+\end{align}\]</span> を得る． つまり問題を構成するパラメータが 問題の最適値関数に与える影響は， ラグラジアンのパラメータ偏微分として 評価することができる．</p>
+<p>これが包絡線定理の結論となる．</p>
+</body>
+  <div style="text-align: center;">
+        <a href="20220117.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20220119.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>
