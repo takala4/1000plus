@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20220202</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="data:application/javascript;base64,dmFyIGZpbGVyZWY9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0JykNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJ0eXBlIiwidGV4dC9qYXZhc2NyaXB0IikNCmZpbGVyZWYuc2V0QXR0cmlidXRlKCJzcmMiLCAiaHR0cHM6Ly9jZG4ubWF0aGpheC5vcmcvbWF0aGpheC9sYXRlc3QvTWF0aEpheC5qcz9jb25maWc9VGVYLUFNUy1NTUxfSFRNTG9yTU1MIikNCmRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCJoZWFkIilbMF0uYXBwZW5kQ2hpbGQoZmlsZXJlZik=" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+
+<!-- web公開用 -->
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20220202</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<blockquote>
+<p>中心極限定理（Central limit theorem）：</p>
+<p>分布がどのようなものであっても，平均値<span class="math inline">\(\mu\)</span>，分散<span class="math inline">\(\sigma^{2}\)</span>を持つ母集団からとられた大きさ<span class="math inline">\(n\)</span>の 標本の平均値<span class="math inline">\(\overline{x}\)</span>の分布は，<span class="math inline">\(n\)</span>が大きいとき正規分布<span class="math inline">\(N(\mu, \sigma^{2}/n)\)</span>に近づく． したがって，<span class="math inline">\(z=\dfrac{\overline{x}-\mu}{\sigma/ \sqrt{n}}\)</span>の分布は， <span class="math inline">\(n\)</span>が大きいとき標準正規分布<span class="math inline">\(N(0,1)\)</span>に近づく．</p>
+</blockquote>
+<p>この中心極限定理を利用して，区間<span class="math inline">\([0, 1]\)</span>上の一様分布に従う乱数から， 標準正規分布<span class="math inline">\(N(0,1)\)</span>に従う乱数を生成する．</p>
+<p>区間<span class="math inline">\([0, 1]\)</span>上の一様分布に従う乱数の期待値は<span class="math inline">\(1/2\)</span>，分散は<span class="math inline">\(1/12\)</span>である．この乱数から大きさ<span class="math inline">\(n\)</span>の標本<span class="math inline">\(\{ x_{1},..,x_{n} \}\)</span>を抽出することを考えると，その標本の平均値は<span class="math inline">\(\sum_{n}x_{i}/n\)</span>となる．</p>
+<p>したがって， <span class="math display">\[
+ z = \dfrac{\sum_{n}x_{i}/n-1/2}{\sqrt{1/12}/ \sqrt{n}} 
+ = \dfrac{6\sum_{n}x_{i}-3n}{\sqrt{3n}}
+\]</span> は標準正規分布に従う．</p>
+<p>ちなみに<span class="math inline">\(n=12\)</span>とすると， <span class="math display">\[
+ z = \sum_{12}x_{i} - 6
+\]</span> となり計算は簡単になる．</p>
+<p><span class="math inline">\(n=12\)</span>として，<span class="math inline">\(N=10000\)</span>回試行して<span class="math inline">\(z\)</span>の度数をプロットしてみた． 灰色の棒グラフが<span class="math inline">\(z\)</span>の度数分布，赤線が解析的に定まる標準正規分布の 確率密度関数である．</p>
+<figure>
+<img src="data:image/png;base64,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" alt="image" /><figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>たしかにそれっぽい．いまさらながら中心極限定理すげえ．</p>
+</body>
+  <div style="text-align: center;">
+        <a href="20220201.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20220203.html"><div class="triangle_right"></div></a>
+      </div>   
+</html>
