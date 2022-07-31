@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Takala" />
+  <title>20220731</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+  
+
+<!-- web公開用 -->
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+ body {
+     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+ }
+
+ .square_center {
+     width: 0;
+     height: 0;
+     border-top: solid 10px #000000;
+     border-right: solid 10px #000000;
+     border-bottom: solid 10px #000000;
+     border-left: solid 10px #000000;
+     display: inline-block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+ }
+
+ .triangle_right {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px transparent;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px #000000;
+     display: inline-block;
+ }
+
+ .triangle_left {
+     width: 0;
+     height: 0;
+     border-top: solid 20px transparent;
+     border-right: solid 20px #000000;
+     border-bottom: solid 20px transparent;
+     border-left: solid 20px transparent;
+     display: inline-block;
+ }
+</style>
+<body>
+<header id="title-block-header">
+<h1 class="title">20220731</h1>
+<p class="author"><a href="index.html">Takala</a></p>
+</header>
+<p>山形にいる．山形は本当に暑い．</p>
+<p>山形は1933年から2007年まで日本で一番の気温を記録していた．</p>
+<p><a href="https://www.data.jma.go.jp/obd/stats/etrn/view/rankall.php">気象庁｜歴代全国ランキング</a> からランキングを転載する：</p>
+<table class="data2_s" summary="最高気温の高い方から">
+<caption class="m">
+最高気温の高い方から<span style="font-weight:lighter; color:#000000; font-size:9pt"> (各地点の観測史上1位の値を使ってランキングを作成)</span>
+</caption>
+<tbody>
+<tr class="mtx">
+<th rowspan="2" scope="col">
+順位
+</th>
+<th rowspan="2" scope="col">
+都道府県
+</th>
+<th rowspan="2" scope="col">
+地点
+</th>
+<th colspan="2" scope="colgroup">
+観測値
+</th>
+<th rowspan="2" scope="col">
+現在観測を実施
+</th>
+</tr>
+<tr class="mtx">
+<th scope="col">
+℃
+</th>
+<th scope="col">
+起日
+</th>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+1
+</th>
+<td style="text-align:center">
+静岡県
+</td>
+<td style="text-align:center">
+浜松 *
+</td>
+<td style="text-align:right">
+41.1
+</td>
+<td align="center">
+2020年8月17日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+埼玉県
+</td>
+<td style="text-align:center">
+熊谷 *
+</td>
+<td style="text-align:right">
+41.1
+</td>
+<td align="center">
+2018年7月23日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+3
+</th>
+<td style="text-align:center">
+岐阜県
+</td>
+<td style="text-align:center">
+美濃
+</td>
+<td style="text-align:right">
+41.0
+</td>
+<td align="center">
+2018年8月8日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+岐阜県
+</td>
+<td style="text-align:center">
+金山
+</td>
+<td style="text-align:right">
+41.0
+</td>
+<td align="center">
+2018年8月6日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+高知県
+</td>
+<td style="text-align:center">
+江川崎
+</td>
+<td style="text-align:right">
+41.0
+</td>
+<td align="center">
+2013年8月12日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+6
+</th>
+<td style="text-align:center">
+静岡県
+</td>
+<td style="text-align:center">
+天竜
+</td>
+<td style="text-align:right">
+40.9
+</td>
+<td align="center">
+2020年8月16日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+岐阜県
+</td>
+<td style="text-align:center">
+多治見
+</td>
+<td style="text-align:right">
+40.9
+</td>
+<td align="center">
+2007年8月16日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+8
+</th>
+<td style="text-align:center">
+新潟県
+</td>
+<td style="text-align:center">
+中条
+</td>
+<td style="text-align:right">
+40.8
+</td>
+<td align="center">
+2018年8月23日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+東京都
+</td>
+<td style="text-align:center">
+青梅
+</td>
+<td style="text-align:right">
+40.8
+</td>
+<td align="center">
+2018年7月23日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+山形県
+</td>
+<td style="text-align:center">
+山形 *
+</td>
+<td style="text-align:right">
+40.8
+</td>
+<td align="center">
+1933年7月25日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+11
+</th>
+<td style="text-align:center">
+山梨県
+</td>
+<td style="text-align:center">
+甲府 *
+</td>
+<td style="text-align:right">
+40.7
+</td>
+<td align="center">
+2013年8月10日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+12
+</th>
+<td style="text-align:center">
+新潟県
+</td>
+<td style="text-align:center">
+寺泊
+</td>
+<td style="text-align:right">
+40.6
+</td>
+<td align="center">
+2019年8月15日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+和歌山県
+</td>
+<td style="text-align:center">
+かつらぎ
+</td>
+<td style="text-align:right">
+40.6
+</td>
+<td align="center">
+1994年8月8日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+14
+</th>
+<td style="text-align:center">
+群馬県
+</td>
+<td style="text-align:center">
+桐生
+</td>
+<td style="text-align:right">
+40.5
+</td>
+<td align="center">
+2020年8月11日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+群馬県
+</td>
+<td style="text-align:center">
+伊勢崎
+</td>
+<td style="text-align:right">
+40.5
+</td>
+<td align="center">
+2020年8月11日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+山梨県
+</td>
+<td style="text-align:center">
+勝沼
+</td>
+<td style="text-align:right">
+40.5
+</td>
+<td align="center">
+2013年8月10日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+17
+</th>
+<td style="text-align:center">
+新潟県
+</td>
+<td style="text-align:center">
+三条
+</td>
+<td style="text-align:right">
+40.4
+</td>
+<td align="center">
+2020年9月3日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+山形県
+</td>
+<td style="text-align:center">
+鼠ケ関
+</td>
+<td style="text-align:right">
+40.4
+</td>
+<td align="center">
+2019年8月15日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+埼玉県
+</td>
+<td style="text-align:center">
+越谷
+</td>
+<td style="text-align:right">
+40.4
+</td>
+<td align="center">
+2007年8月16日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+20
+</th>
+<td style="text-align:center">
+新潟県
+</td>
+<td style="text-align:center">
+高田 *
+</td>
+<td style="text-align:right">
+40.3
+</td>
+<td align="center">
+2019年8月14日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+愛知県
+</td>
+<td style="text-align:center">
+名古屋 *
+</td>
+<td style="text-align:right">
+40.3
+</td>
+<td align="center">
+2018年8月3日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+群馬県
+</td>
+<td style="text-align:center">
+館林
+</td>
+<td style="text-align:right">
+40.3
+</td>
+<td align="center">
+2007年8月16日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+群馬県
+</td>
+<td style="text-align:center">
+上里見
+</td>
+<td style="text-align:right">
+40.3
+</td>
+<td align="center">
+1998年7月4日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+<tr class="mtx">
+<th style="text-align:center">
+〃
+</th>
+<td style="text-align:center">
+愛知県
+</td>
+<td style="text-align:center">
+愛西
+</td>
+<td style="text-align:right">
+40.3
+</td>
+<td align="center">
+1994年8月5日
+</td>
+<td align="center">
+○
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+  <div style="text-align: center;">
+        <a href="20220730.html"><div class="triangle_left"></div></a>
+        <a href="index.html"><div class="square_center"></div></a>
+        <a href="20220801.html"><div class="triangle_right"></div></a>
+      </div>
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	CommonHTML: {
+		scale: 85
+	},
+	"HTML-CSS": {
+		scale: 85
+	},
+	NativeMML: {
+		scale: 85
+	},
+	SVG: {
+		scale: 85
+	},
+	PreviewHTML: {
+		scale: 85
+	}
+});
+</script>
+</html>
